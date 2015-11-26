@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url('css/foundation.css');?>" />
     <link rel="stylesheet" href="<?php echo base_url('css/main.css');?>" />
     <script src="<?php echo base_url('js/vendor/modernizr.js');?>"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXjC-Us_OJ7c_xUiYjNQZ0RKnuZOjz4S0"></script>
   </head>
   <body>
   	
