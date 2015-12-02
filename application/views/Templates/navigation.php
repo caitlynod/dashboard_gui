@@ -19,7 +19,7 @@
       </section>
 
       <section class="medium-4 columns">
-       <img class="logo right" src="<?php echo base_url().'images/logo.png';?>">
+       <img class="logo" src="<?php echo base_url().'images/logo.png';?>">
       </section>
 
 
@@ -32,6 +32,7 @@
         <section class="row selectUser ">
           <div class="medium-12 columns">
             <h2 class="text-center columns">Please select a user</h2>
+            <p>Hello! Who will be driving today?</p>
           </div>
           
         </section>

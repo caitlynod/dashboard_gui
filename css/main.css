@@ -16,7 +16,6 @@ p, a{
 
 .date{
 	margin-left: 12px;
-	padding-top: 15px;
 }
 
 .tab-bar {
@@ -41,7 +40,7 @@ p, a{
 	}
 
 .left-off-canvas-menu {
-width: 93%;
+width: 96%;
 background: transparent !important;
 height: 768px;
 position: absolute;
@@ -53,7 +52,6 @@ background-color: #000;
 	font-size: 1.875em;
 	font-family: 'Gotham';
 	font-weight: 100;
-	padding: 10px;
 }
 
 .date p{
@@ -71,23 +69,22 @@ font-family: 'Gotham';
 	font-family: 'Gotham';
 	font-weight: 100;
 	font-size: 0.80em;
-	margin-top: 16px;
 
 }
 .userChange{
-	margin-top: 12px;
 	margin-left: 20px;
 }
 
 .logo{
 	display: block;
 	margin: 0 auto;
-	padding-top: 15px;
+	padding-top: 5px;
 }
 
-.selectUser{
-font-family: 'akashiregular';
-color: #98d5d1;
+.selectUser p{
+	font-family: 'Gotham';
+color: #f1f1f2;
+text-align: center;
 }
 /* MAIN */
 
