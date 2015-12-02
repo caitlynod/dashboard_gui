@@ -16,13 +16,14 @@ p, a{
 
 .date{
 	margin-left: 12px;
-	padding: 15px;
+	padding-top: 15px;
 }
 
 .tab-bar, .move-right .exit-off-canvas {
 	background: transparent !important;
 	box-shadow: none;
 }
+
 .move-right > .inner-wrap {
   -webkit-transform: translate3d(92%, 0, 0);
   -moz-transform: translate3d(92%, 0, 0);
@@ -40,6 +41,7 @@ p, a{
 width: 93%;
 background: transparent !important;
 height: 768px;
+position: absolute;
 }
 .menu-icon{
 
@@ -78,4 +80,9 @@ font-family: 'Gotham';
 	display: block;
 	margin: 0 auto;
 	padding-top: 15px;
+}
+
+.selectUser{
+font-family: 'akashiregular';
+color: #98d5d1;
 }

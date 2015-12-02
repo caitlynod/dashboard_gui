@@ -4,9 +4,6 @@
     <nav class="tab-bar">
       <a class="left-off-canvas-toggle menu-icon left" href="#"><span></span></a>
       
-		
-        
-      </section>
     </nav>
 
     <aside class="left-off-canvas-menu">
@@ -32,7 +29,7 @@
           <img class="userChange" src="<?php echo base_url().'images/change_icon.png';?>">
         </div>
 </section>
-        <section class="medium-12 columns right">
-          <h2>Please select a user</h2>
+        <section class="medium-12 columns right ">
+          <h2 class="selectUser text-center columns">Please select a user</h2>
         </section>
     </aside>
