@@ -1,6 +1,7 @@
 (function(){
 
   var maintime = document.querySelector("#mainClock");
+  var toptime = document.querySelector("#topClock");
   var t = true;
 
   if(maintime){
@@ -41,6 +42,7 @@
 
       // Update the time display
       maintime.innerHTML = currentTimeStringMain;
+      toptime.innerHTML = currentTimeStringMain;
     }
     updateMainTime();
     window.setInterval(updateMainTime,1000);

@@ -93,8 +93,15 @@ color: #98d5d1;
 /* MAIN */
 
 #topClock{
-	height: 50px;
 	width: 100%;
 	background-color: rgba(255,255,255,0.5);
 	z-index: 1;
+	padding-top: 15px;
+	margin-left: 75px;
+	padding-right: 150px;
+	background-color: rgba(0,0,0,0.2);
+	font-size: 1.4em;
+	color: #f1f1f2;
+	font-family: 'Gotham';
+	font-weight: 100;
 }
