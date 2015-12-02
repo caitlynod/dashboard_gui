@@ -8,7 +8,7 @@
 
     <aside class="left-off-canvas-menu">
       <section class="small-4 columns dateTime">
-        <div class="left">
+  <div class="left">
     <h2 id="mainClock" class="left"></h2>
     <div class="right date">
       <p ><?php echo date('l');?></p>
@@ -29,7 +29,10 @@
           <img class="userChange" src="<?php echo base_url().'images/change_icon.png';?>">
         </div>
 </section>
-        <section class="medium-12 columns right ">
-          <h2 class="selectUser text-center columns">Please select a user</h2>
+        <section class="row selectUser ">
+          <div class="medium-12 columns">
+            <h2 class="text-center columns">Please select a user</h2>
+          </div>
+          
         </section>
     </aside>

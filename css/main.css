@@ -19,6 +19,10 @@ p, a{
 	padding-top: 15px;
 }
 
+.tab-bar {
+	height: 0;
+}
+
 .tab-bar, .move-right .exit-off-canvas {
 	background: transparent !important;
 	box-shadow: none;
@@ -85,4 +89,12 @@ font-family: 'Gotham';
 .selectUser{
 font-family: 'akashiregular';
 color: #98d5d1;
+}
+/* MAIN */
+
+#topClock{
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 1;
 }
