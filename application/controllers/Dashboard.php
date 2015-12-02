@@ -10,6 +10,7 @@ class Dashboard extends CI_Controller {
 		$data['title'] = 'Dashboard';
 		$this->load->view('Templates/header', $data);
 		$this->load->view('Templates/navigation');
+		$this->load->view('main');
 		$this->load->view('Templates/footer');
 		
 	}

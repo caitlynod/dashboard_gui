@@ -11,7 +11,7 @@
 
     <aside class="left-off-canvas-menu">
       <section class="small-4 columns dateTime">
-        <div class="left">
+  <div class="left">
     <h2 id="mainClock" class="left"></h2>
     <div class="right date">
       <p ><?php echo date('l');?></p>
