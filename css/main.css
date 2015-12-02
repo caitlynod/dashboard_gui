@@ -29,11 +29,11 @@ p, a{
 }
 
 .move-right > .inner-wrap {
-  -webkit-transform: translate3d(92%, 0, 0);
-  -moz-transform: translate3d(92%, 0, 0);
-  -ms-transform: translate(92%, 0);
-  -o-transform: translate3d(92%, 0, 0);
-  transform: translate3d(92%, 0, 0); }
+  -webkit-transform: translate3d(93%, 0, 0);
+  -moz-transform: translate3d(93%, 0, 0);
+  -ms-transform: translate(93%, 0);
+  -o-transform: translate3d(93%, 0, 0);
+  transform: translate3d(93%, 0, 0); }
 .tab-bar .menu-icon {
 	-ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
