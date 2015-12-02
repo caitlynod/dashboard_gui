@@ -11,4 +11,26 @@ h2{
 
 p, a{
 	color: #98d5d1;
+	margin-bottom: 0;
+}
+
+.date{
+	margin-left: 15px;
+}
+
+.tab-bar{
+	background: transparent !important;
+}
+.tab-bar .menu-icon {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+	}
+
+#changeUser{
+	margin-left: 20px;
+}
+.userChange{
+
+	margin-left: 20px;
 }
