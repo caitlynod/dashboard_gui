@@ -1,3 +1,14 @@
+/*Border: color: #4d4c4c Blue: color: #98d5d1; White/Grey: color: #f1f1f2; Dark Blue: color: #252c2a*/
+body{
+	background: url('../images/background.png') no-repeat;
+}
 #mapCanvas{
 	height: 250px;
+}
+h2{
+	color: #f1f1f2;
+}
+
+p, a{
+	color: #98d5d1;
 }
