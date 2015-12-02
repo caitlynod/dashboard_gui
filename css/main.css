@@ -80,11 +80,27 @@ font-family: 'Gotham';
 	margin: 0 auto;
 	padding-top: 5px;
 }
-
+.selectUser{
+	margin-left: 5px;
+}
 .selectUser p{
 	font-family: 'Gotham';
 color: #f1f1f2;
 text-align: center;
+padding-bottom: 10px;
+}
+.userhead{
+font-family: 'akashiregular';
+color: #98d5d1;
+}
+hr{
+	border: solid #98d5d1 1px;
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+.users{
+	    padding-left: 0.9375rem;
 }
 /* MAIN */
 

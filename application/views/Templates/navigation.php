@@ -31,8 +31,19 @@
 </section>
         <section class="row selectUser ">
           <div class="medium-12 columns">
-            <h2 class="text-center columns">Please select a user</h2>
+            <h2 class="text-center columns userhead">please select a user</h2>
             <p>Hello! Who will be driving today?</p>
+          </div>
+          <hr>
+          <div class="small-block-grid-4 columns users">
+            <ul class="small-block-grid-4 columns users">
+              
+            </ul>
+
+            <div><p>Cait</p></div>
+            <div><p>Cait</p></div>
+            <div><p>Cait</p></div>
+            <div><p>Cait</p></div>
           </div>
           
         </section>
