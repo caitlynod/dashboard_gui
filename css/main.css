@@ -106,7 +106,19 @@ color: #98d5d1;
 }
 
 #navBorder{
+	position: absolute;
+	left: 0;
+	top: 45px;
 	width: 45px;
 	height: 723px;
 	background-color: #000;
+}
+
+#mainDash{
+	height: 723px;
+}
+
+#mainDash img{
+	display: block;
+	margin: 0 auto;
 }
