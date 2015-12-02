@@ -29,16 +29,15 @@ p, a{
 }
 
 .move-right > .inner-wrap {
-  -webkit-transform: translate3d(93%, 0, 0);
-  -moz-transform: translate3d(93%, 0, 0);
-  -ms-transform: translate(93%, 0);
-  -o-transform: translate3d(93%, 0, 0);
-  transform: translate3d(93%, 0, 0); }
+  -webkit-transform: translate3d(95.5%, 0, 0);
+  -moz-transform: translate3d(95.5%, 0, 0);
+  -ms-transform: translate(95.5%, 0);
+  -o-transform: translate3d(95.5%, 0, 0);
+  transform: translate3d(95.5%, 0, 0); }
 .tab-bar .menu-icon {
 	-ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
-    margin: 15px;
 	}
 
 .left-off-canvas-menu {
@@ -48,7 +47,7 @@ height: 768px;
 position: absolute;
 }
 .menu-icon{
-
+background-color: #000;
 }
 #mainClock{
 	font-size: 1.875em;
@@ -94,11 +93,12 @@ color: #98d5d1;
 
 #topClock{
 	width: 100%;
+	height: 45px;
 	background-color: rgba(255,255,255,0.5);
 	z-index: 1;
-	padding-top: 15px;
-	margin-left: 75px;
-	padding-right: 150px;
+	margin-left: 45px;
+	padding-top: 5px;
+	padding-right: 120px;
 	background-color: rgba(0,0,0,0.2);
 	font-size: 1.4em;
 	color: #f1f1f2;
