@@ -15,22 +15,67 @@ p, a{
 }
 
 .date{
-	margin-left: 15px;
+	margin-left: 12px;
+	padding: 15px;
 }
 
-.tab-bar{
+.tab-bar, .move-right .exit-off-canvas {
 	background: transparent !important;
+	box-shadow: none;
 }
+.move-right > .inner-wrap {
+  -webkit-transform: translate3d(92%, 0, 0);
+  -moz-transform: translate3d(92%, 0, 0);
+  -ms-transform: translate(92%, 0);
+  -o-transform: translate3d(92%, 0, 0);
+  transform: translate3d(92%, 0, 0); }
 .tab-bar .menu-icon {
 	-ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+    margin: 15px;
 	}
 
+.left-off-canvas-menu {
+width: 93%;
+background: transparent !important;
+height: 768px;
+}
+.menu-icon{
+
+}
+#mainClock{
+	font-size: 1.875em;
+	font-family: 'Gotham';
+	font-weight: 100;
+	padding: 10px;
+}
+
+.date p{
+font-family: 'Gotham';
+	font-weight: 100;
+	font-size: 0.75em;
+}
+
 #changeUser{
-	margin-left: 20px;
+	margin-left: 80px;
+	padding: 10px;
+	float: right;
+}
+.change{
+	font-family: 'Gotham';
+	font-weight: 100;
+	font-size: 0.80em;
+	margin-top: 16px;
+
 }
 .userChange{
-
+	margin-top: 12px;
 	margin-left: 20px;
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
 }
