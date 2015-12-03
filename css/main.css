@@ -109,6 +109,9 @@ letter-spacing: 5px;
 	display: block;
 	margin: 0 auto;
 }
+.userProf{
+	padding:30px;
+}
 .userProf li{
 		border-left: 1px #f1f1f2 solid;
 }
@@ -119,7 +122,7 @@ hr{
 	border: solid #98d5d1 1px;
 	display: block;
 	margin: 0 auto;
-	width: 90%;
+	width: 85%;
 }
 .users{
 	    padding-left: 0.9375rem;
