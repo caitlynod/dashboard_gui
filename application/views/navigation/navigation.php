@@ -2,7 +2,6 @@
   <div class="inner-wrap">
     <nav class="tab-bar">
       <a class="left-off-canvas-toggle menu-icon left" href="#"><span></span></a>
-      
     </nav>
 
     <aside class="left-off-canvas-menu">
@@ -28,3 +27,4 @@
           <img class="userChange" src="<?php echo base_url().'images/change_icon.png';?>">
         </div>
 </section>
+<img id="settings" src="<?php echo base_url().'images/settings.png';?>">

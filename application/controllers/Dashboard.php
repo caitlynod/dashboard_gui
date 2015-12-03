@@ -5,13 +5,24 @@ class Dashboard extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 	}
-		public function index()
-	{
+	
+	public function index(){
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
 		$this->load->view('Templates/header', $data);
-		$this->load->view('Templates/navigation');
-		$this->load->view('Templates/chooseUser');
+		$this->load->view('navigation/navigation');
+		$this->load->view('navigation/chooseUser');
+		$this->load->view('main');
+		$this->load->view('Templates/footer');
+		
+	}
+
+	public function login(){
+		date_default_timezone_set('America/Toronto');
+		$data['title'] = 'Dashboard';
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigation');
+		$this->load->view('navigation/loginUser');
 		$this->load->view('main');
 		$this->load->view('Templates/footer');
 		
