@@ -34,9 +34,9 @@ class Dashboard extends CI_Controller {
 		$temp = $tempData['main']['temp'];
 		$tempMin = $tempData['main']['temp_min'];
 		$tempMax = $tempData['main']['temp_max'];
-		$c = $temp-273.15;
-		$cMin = $tempMin-273.15;
-		$cMax = $tempMax-273.15;
+		$c = round($temp-273.15);
+		$cMin = round($tempMin-273.15);
+		$cMax = round($tempMax-273.15);
 		$data['temp'] = $c;
 		$data['min'] = $cMin;
 		$data['max'] = $cMax;

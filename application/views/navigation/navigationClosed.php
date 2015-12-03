@@ -17,7 +17,7 @@
       </section>
 
       <section class="medium-4 columns">
-       <img class="logo" src="<?php echo base_url().'images/logo.png';?>">
+      <a href="<?php echo base_url(); ?>index.php/dashboard/volt"><img class="logo" src="<?php echo base_url().'images/logo.png';?>"></a>
       </section>
 
 
