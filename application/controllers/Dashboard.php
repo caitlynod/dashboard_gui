@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigation');
 		$this->load->view('navigation/chooseUser');
-		$this->load->view('main');
+		$this->load->view('default');
 		$this->load->view('Templates/footer');
 		
 	}
@@ -23,7 +23,7 @@ class Dashboard extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigation');
 		$this->load->view('navigation/loginUser');
-		$this->load->view('main');
+		$this->load->view('default');
 		$this->load->view('Templates/footer');
 		
 	}
