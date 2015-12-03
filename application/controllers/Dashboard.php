@@ -28,6 +28,17 @@ class Dashboard extends CI_Controller {
 		
 	}
 
+	public function volt(){
+		date_default_timezone_set('America/Toronto');
+		$data['title'] = 'Dashboard';
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigation');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('main');
+		$this->load->view('Templates/footer');
+		
+	}
+
 	public function navigation(){
 		$data['title'] = 'Dashboard Navigation';
 		$this->load->view('Templates/header', $data);

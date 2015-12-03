@@ -94,13 +94,13 @@ color: #f1f1f2;
 text-align: center;
 padding-bottom: 10px;
 }
-.userhead, .profile{
+.userhead, .profile, h2.navOption{
 font-family: 'akashiregular';
 color: #98d5d1;
 letter-spacing: 5px;
 }
 
-.profile{
+.profile, h2.navOption{
 	font-size: 1.3em;
 	text-align: center;
 	padding-top: 45px;
@@ -112,18 +112,23 @@ letter-spacing: 5px;
 	bottom: 5px;
 	left: 5px;
 }
-.profPic{
+.profPic, .navPic{
 	display: block;
 	margin: 0 auto;
 }
-.userProf{
+.userProf, .mainNav{
 	padding:50px 30px 0;
 }
-.userProf li{
+.userProf li, .mainNav li{
 		border-left: 1px #666666 solid;
 }
-.userProf li:first-child{
+.userProf li:first-child, .mainNav li:first-child{
 	border-left: none;
+}
+.mainNav li:hover,.mainNav li:active {
+	background: -moz-linear-gradient(top, #98d5d1 0%, #252c2a 100%);
+	background: -webkit-linear-gradient(top, #98d5d1 0%,#252c2a 100%);
+	background: linear-gradient(to bottom, #98d5d1 0%,#252c2a 100%);
 }
 hr{
 	border: solid #98d5d1 1px;
