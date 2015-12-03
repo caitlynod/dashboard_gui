@@ -103,6 +103,7 @@ letter-spacing: 5px;
 .profile{
 	font-size: 1.3em;
 	text-align: center;
+	padding-top: 45px;
 }
 
 .profPic{
@@ -123,6 +124,14 @@ hr{
 	display: block;
 	margin: 0 auto;
 	width: 85%;
+}
+.user{
+	margin-top: 100px;
+}
+
+.user p {
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
 .users{
 	    padding-left: 0.9375rem;
