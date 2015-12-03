@@ -2,6 +2,7 @@
 
   var maintime = document.querySelector("#mainClock");
   var toptime = document.querySelector("#topClock");
+  var dashtime = document.querySelector("#dashClock");
   var t = true;
 
   if(maintime){
@@ -43,6 +44,7 @@
       // Update the time display
       maintime.innerHTML = currentTimeStringMain;
       toptime.innerHTML = currentTimeStringMain;
+      dashtime.innerHTML = currentHours + ":" + currentMinutes;
     }
     updateMainTime();
     window.setInterval(updateMainTime,1000);

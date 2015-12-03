@@ -11,7 +11,7 @@
     <h2 id="mainClock" class="left"></h2>
     <div class="right date">
       <p ><?php echo date('l');?></p>
-    <p ><?php echo date('F d Y');?></p>
+    <p ><?php echo date('F jS Y');?></p>
     </div>
     
   </div>

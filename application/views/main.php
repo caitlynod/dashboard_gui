@@ -6,23 +6,35 @@
 		<h3 class="userhead">weather</h3>
 		<p class="white">London ON</p>
 		<div class="dashInfo">
-			<p class="topNumber">10°C</p>
-			<p class="subInfo">Sunny With Cloudy Periods</p>
+			<p class="topNumber">10°c</p>
+			<p class="white">Sunny With<br>Cloudy Periods</p>
 		</div>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/clock_icon.png';?>">
 		<h3 class="userhead">clock</h3>
 		<p class="white">London ON</p>
+		<div class="dashInfo">
+			<p id="dashClock" class="topNumber"></p>
+			<p class="white"><?php echo date('l');?><br><?php echo date('F jS Y');?></p>
+		</div>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/trip_icon.png';?>">
 		<h3 class="userhead">trip</h3>
 		<p class="white">Woodstock ON</p>
+		<div class="dashInfo">
+			<p class="topNumber">50km</p>
+			<p class="white">From Home<br>No Destination Set</p>
+		</div>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/radio_icon.png';?>">
 		<h3 class="userhead">radio</h3>
 		<p class="white">FM Radio</p>
+		<div class="dashInfo">
+			<p class="topNumber">97.5</p>
+			<p class="white">Currently Playing:<br>Adele - “Hello”</p>
+		</div>
 	</li>
 </ul>

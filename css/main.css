@@ -181,3 +181,15 @@ hr{
 	background: -moz-linear-gradient(right, rgba(100,100,100,0.1), rgba(0,0,0,0.3));
 	background: linear-gradient(to right, rgba(100,100,100,0.1), rgba(0,0,0,0.3));
 }
+
+.dashInfo{
+	margin: 100px 30px 0;
+	padding: 25px 0 50px;
+	border-top: 1px solid #98d5d1;
+	border-bottom: 1px solid #98d5d1;
+}
+
+.topNumber{
+	font-size: 3em;
+	letter-spacing: 5px;
+}
