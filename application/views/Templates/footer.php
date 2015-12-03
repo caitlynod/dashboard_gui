@@ -1,6 +1,5 @@
-  <a class="exit-off-canvas"></a>
-
-  </div>
+<a class="exit-off-canvas"></a>
+</div>
 </div>
 <script src="<?php echo base_url().'js/vendor/jquery.js';?>"></script>
 <script src="<?php echo base_url().'js/foundation.min.js';?>"></script>
@@ -12,6 +11,7 @@ $(document).foundation();
 	baseURL = "<?php echo base_url(); ?>";
 </script>
 <script src="<?php echo base_url().'js/retina.min.js';?>"></script>
+<script type="text/javascript" src="<?php echo base_url().'js/ajax.js';?>"></script>
 <script type="text/javascript" src="<?php echo base_url().'js/clock.js';?>"></script>
 <script type="text/javascript" src="<?php echo base_url().'js/main.js';?>"></script>
 </body>

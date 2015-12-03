@@ -269,6 +269,12 @@ text-align: center;
 padding: 0;
 
 }
+#searchResults{
+	height: 270px;
+}
+#noResult{
+	margin-top: 75px;
+}
 h2.contactName{
 	font-size: 2em;
 	padding-top: 30px;

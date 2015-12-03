@@ -10,6 +10,7 @@ class DashModel extends CI_Model {
   	$this->db->select('*');
 	$this->db->from('tbl_contacts');
 	$this->db->like('contacts_fname', $q, 'after');
+	$this->db->limit(6);
 	$sql = $this->db->get();
 	return $sql->result_array();
 }
@@ -17,7 +18,6 @@ class DashModel extends CI_Model {
 		$this->db->limit(6);
 		$sql = $this->db->get('tbl_contacts');
 		return $sql->result_array();
-
 	}
 
 
