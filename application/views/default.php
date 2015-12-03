@@ -20,7 +20,7 @@
 		</div>
 	</li>
 	<li>
-		<img src="<?php echo base_url().'images/trip-test.png';?>">
+		<img src="<?php echo base_url().'images/trip_icon.png';?>">
 		<h3 class="userhead">trip</h3>
 		<p class="white">Woodstock ON</p>
 		<div class="dashInfo">
