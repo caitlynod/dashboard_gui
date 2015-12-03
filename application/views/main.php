@@ -1,5 +1,4 @@
 <div id="topClock" class="text-center"></div>
-<div id="navBorder"></div>
 <ul id="mainDash" class="small-block-grid-4 text-center">
 	<li>
 		<img src="<?php echo base_url().'images/weather_icon.png';?>">

@@ -50,9 +50,6 @@ background: transparent !important;
 height: 768px;
 position: absolute;
 }
-.menu-icon{
-background-color: #000;
-}
 #mainClock{
 	font-size: 1.875em;
 	font-family: 'Gotham';
@@ -109,9 +106,8 @@ letter-spacing: 5px;
 
 #settings{
 	position: absolute;
-	bottom: 1;
-	right: 0;
-	z-index: 100;
+	bottom: 5px;
+	left: 5px;
 }
 .profPic{
 	display: block;
@@ -158,15 +154,6 @@ hr{
 	color: #f1f1f2;
 	font-family: 'Gotham';
 	font-weight: 100;
-}
-
-#navBorder{
-	position: absolute;
-	left: 0;
-	top: 45px;
-	width: 45px;
-	height: 723px;
-	background-color: #000;
 }
 
 #mainDash{
