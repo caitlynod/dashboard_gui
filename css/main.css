@@ -89,19 +89,37 @@ color: #f1f1f2;
 text-align: center;
 padding-bottom: 10px;
 }
-.userhead{
+.userhead, .profile{
 font-family: 'akashiregular';
 color: #98d5d1;
 letter-spacing: 5px;
+}
+
+.profile{
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.profPic{
+	display: block;
+	margin: 0 auto;
+}
+.userProf li{
+		border-left: 1px #f1f1f2 solid;
+}
+.userProf li:first-child{
+	border-left: none;
 }
 hr{
 	border: solid #98d5d1 1px;
 	display: block;
 	margin: 0 auto;
-	width: 75%;
+	width: 90%;
 }
 .users{
 	    padding-left: 0.9375rem;
+	    display: block;
+	    margin: 0 auto;
 }
 /* MAIN */
 
