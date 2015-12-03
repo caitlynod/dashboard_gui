@@ -7,6 +7,7 @@
 		<p class="white">London ON</p>
 		<div class="dashInfo">
 			<p class="topNumber">10°c</p>
+			<p class="userhead"><i class="fa fa-arrow-up"></i>12°c <i class="fa fa-arrow-down"></i>-5°c</p>
 			<p class="white">Sunny With<br>Cloudy Periods</p>
 		</div>
 	</li>
