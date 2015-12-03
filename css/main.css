@@ -104,8 +104,15 @@ letter-spacing: 5px;
 	font-size: 1.3em;
 	text-align: center;
 	padding-top: 45px;
+	height: 200px;
 }
 
+#settings{
+	position: absolute;
+	bottom: 1;
+	right: 0;
+	z-index: 100;
+}
 .profPic{
 	display: block;
 	margin: 0 auto;
@@ -114,7 +121,7 @@ letter-spacing: 5px;
 	padding:30px;
 }
 .userProf li{
-		border-left: 1px #f1f1f2 solid;
+		border-left: 1px #666666 solid;
 }
 .userProf li:first-child{
 	border-left: none;
@@ -130,8 +137,7 @@ hr{
 }
 
 .user p {
-	margin-bottom: 25px;
-	margin-top: 10px;
+	line-height: 4;
 }
 .users{
 	    padding-left: 0.9375rem;

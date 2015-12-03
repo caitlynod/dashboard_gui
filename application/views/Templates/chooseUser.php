@@ -13,4 +13,5 @@
         </ul>
     </div>
 </section>
+<img id="settings" src="<?php echo base_url().'images/settings.png';?>">
 </aside>
