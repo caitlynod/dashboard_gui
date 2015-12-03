@@ -341,14 +341,24 @@ border: none;
 -webkit-border-radius: 5px;
 }
 #keyboard {
+<<<<<<< Updated upstream
 margin: 15px auto 0;
 display: block;
 width: 71%;
 padding: 0;
 list-style: none;
+=======
+	margin: 0 auto;
+	display: block;
+	width: 71%;
+	padding: 0;
+	list-style: none;
+	margin-top: 50px;
+>>>>>>> Stashed changes
 }
-    #keyboard li {
-    float: left;
+
+#keyboard li {
+	float: left;
     margin: 0 5px 5px 0;
     width: 40px;
     height: 40px;
@@ -358,59 +368,61 @@ list-style: none;
     color: #fff;-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border: 1px solid #999999;
-    
-    }
-        .capslock, .tab, .left-shift {
-        clear: left;
-        }
-            #keyboard .tab, #keyboard .delete {
-            width: 70px;
-            }
-            #keyboard .capslock {
-            width: 80px;
-            }
-            #keyboard .return {
-            width: 77px;
-            }
-            #keyboard .left-shift {
-            width: 95px;
-            }
-            #keyboard .right-shift {
-            width: 109px;
-            }
-        .lastitem {
-        margin-right: 0;
-        }
-        .uppercase {
-        text-transform: uppercase;
-        }
-        #keyboard .space {
-        clear: left;
-        width: 660px;
-        }
-        .on {
-        display: none;
-        }
-        #keyboard li:hover {
-        position: relative;
-        top: 1px;
-        left: 1px;
-        border-color: #e5e5e5;
-        cursor: pointer;
-        }
+}
+
+.capslock, .tab, .left-shift {
+	clear: left;
+}
+
+#keyboard .tab, #keyboard .delete {
+	width: 70px;
+}
+#keyboard .capslock {
+	width: 80px;
+}
+#keyboard .return {
+	width: 77px;
+}
+#keyboard .left-shift {
+	width: 95px;
+}
+#keyboard .right-shift {
+	width: 109px;
+}
+.lastitem {
+	margin-right: 0;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+#keyboard .space {
+	clear: left;
+	width: 660px;
+}
+.on {
+	display: none;
+}
+#keyboard li:hover {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	border-color: #e5e5e5;
+	cursor: pointer;
+}
 
 /*Key Pad*/
-#keypad{
+.keypad{
 	display: block;
 	margin: 0 auto;
 	width: 100%;
+	padding-left: 185px !important;
 }
 .numpad li {
     float: left !important;
-    margin: 0 70px 10px 0;
-    width: 100px !important;
-    height: 100px !important;
-    line-height: 40px;
+    margin: 0 50px 30px 0 !important;
+    width: 90px !important;
+    height: 90px !important;
+    line-height: 30px;
     text-align: center;
     background: transparent;
     color: #fff;
@@ -420,4 +432,11 @@ list-style: none;
     border: 1px solid #999999;
     font-family: 'Gotham';
 	font-weight: 100;
+	padding-top: 23px;
+
+}
+
+.delete{
+	position: absolute;
+	right: 0;
 }
