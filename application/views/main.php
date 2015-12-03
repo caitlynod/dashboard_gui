@@ -5,7 +5,9 @@
 		<img src="<?php echo base_url().'images/weather_icon.png';?>">
 		<h3 class="userhead">weather</h3>
 		<p class="white">London ON</p>
-		<div class="dashInfo">	
+		<div class="dashInfo">
+			<p class="topNumber">10°C</p>
+			<p class="subInfo">Sunny With Cloudy Periods</p>
 		</div>
 	</li>
 	<li>
