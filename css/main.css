@@ -148,6 +148,44 @@ hr{
 	    display: block;
 	    margin: 0 auto;
 }
+
+/* LOGIN */
+
+#loginPanel{
+	margin-top: 50px;
+}
+
+#loginPanel li{
+	margin-bottom: 30px;
+}
+
+.loginDot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	background: -webkit-radial-gradient(white, #999);
+	background: -o-radial-gradient(white, #999);
+	background: -moz-radial-gradient(white, #999);
+	background: radial-gradient(white, #999);
+}
+
+.loginDotBorder{
+	display: block;
+	margin: 0 auto;
+	width: 10px;
+	height: 10px;
+	padding: 5px;
+	border-radius: 50px;
+	border: 2px solid #98d5d1;
+	box-sizing:content-box;
+}
+
+.loginDotBorder.active{
+	-moz-box-shadow: 0 0 20px #fff;
+	-webkit-box-shadow: 0 0 20px #fff;
+	box-shadow: 0px 0px 20px #fff;
+}
+
 /* MAIN */
 
 #topClock{

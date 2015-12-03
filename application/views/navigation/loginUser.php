@@ -4,14 +4,27 @@
 		<p>Please enter your passcode to continue</p>
 	</div>
 	<hr>
+	<div class="medium-4 columns small-centered">
 	<div class="users">
-		<ul class="small-block-grid-6 columns userProf">
-			<li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">John</h2></li>
-            <li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Annie</h2></li>
-            <li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Guest</h2></li>
-            <li><img class="profPic" src="<?php echo base_url().'images/adduser_icon.png';?>"><h2 class="profile">add user</h2></li>
-            
+		<ul id="loginPanel" class="small-block-grid-4">
+			<li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+           	<li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
+            <li><div class="loginDotBorder"><div class="loginDot"></div></div></li>
         </ul>
+    </div>
     </div>
 </section>
 </aside>
