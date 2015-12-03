@@ -21,6 +21,7 @@ p, a{
 
 .date{
 	margin-left: 12px;
+	    padding-top: 10px;
 }
 
 .tab-bar {
@@ -60,6 +61,7 @@ position: absolute;
 font-family: 'Gotham';
 	font-weight: 100;
 	font-size: 0.75em;
+	    line-height: 1;
 }
 
 #changeUser{
@@ -71,6 +73,7 @@ font-family: 'Gotham';
 	font-family: 'Gotham';
 	font-weight: 100;
 	font-size: 0.80em;
+	padding-top: 8px;
 
 }
 .userChange{
@@ -80,7 +83,7 @@ font-family: 'Gotham';
 .logo{
 	display: block;
 	margin: 0 auto;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 .selectUser{
 	margin-left: 5px;

@@ -9,7 +9,7 @@
 			<li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">John</h2></li>
             <li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Annie</h2></li>
             <li><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Guest</h2></li>
-            <li><img class="profPic" src="<?php echo base_url().'images/adduser_icon.png';?>"><h2 class="profile">Add User</h2></li>
+            <li><img class="profPic" src="<?php echo base_url().'images/adduser_icon.png';?>"><h2 class="profile">add user</h2></li>
         </ul>
     </div>
 </section>
