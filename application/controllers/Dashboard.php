@@ -101,6 +101,5 @@ class Dashboard extends CI_Controller {
 		$contactList = $this->dashModel->searchContacts($q);
 		$contacts = json_encode($contactList);
 		echo $contacts;
-	
 	}
 }
