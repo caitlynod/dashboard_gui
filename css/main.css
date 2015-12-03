@@ -12,6 +12,11 @@ h2{
 p, a{
 	color: #98d5d1;
 	margin-bottom: 0;
+	font-family: 'Gotham';
+}
+
+.white{
+	color: #fff;
 }
 
 .date{
@@ -153,7 +158,7 @@ hr{
 
 #mainDash img{
 	display: block;
-	margin: 0 auto;
+	margin: 100px auto 15px;
 }
 
 #mainDash li{
