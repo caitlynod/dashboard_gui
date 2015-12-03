@@ -1,7 +1,7 @@
 <section class="row selectUser">
 	<div class="medium-12 columns user">
-		<h2 class="text-center columns userhead">hello, John!</h2>
-		<p>Please enter your passcode to continue</p>
+		<h2 class="text-center columns userhead">Hello, John</h2>
+		<p>Hello! Who will be driving today?</p>
 	</div>
 	<hr>
 	<div class="users">
@@ -14,4 +14,5 @@
         </ul>
     </div>
 </section>
+<img id="settings" src="<?php echo base_url().'images/settings.png';?>">
 </aside>
