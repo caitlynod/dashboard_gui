@@ -6,7 +6,7 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 
 	[].forEach.call(searchKey, function(el) {
 		el.addEventListener("click", function(){
-			ajaxGetEmp(this.id);
+			ajaxGetEmp(searchField.innerHTML);
 		}, false);
 	});
 
