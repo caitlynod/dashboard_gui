@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title><?php echo $title;?></title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,7 +10,5 @@
     <link rel="stylesheet" href="<?php echo base_url('fonts/stylesheet.css');?>" />
     <link rel="stylesheet" href="<?php echo base_url('css/main.css');?>" />
     <script src="<?php echo base_url('js/vendor/modernizr.js');?>"></script>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXjC-Us_OJ7c_xUiYjNQZ0RKnuZOjz4S0"></script>
-  -->
   </head>
   <body>

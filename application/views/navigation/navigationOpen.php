@@ -1,6 +1,8 @@
 <div class="off-canvas-wrap move-right" data-offcanvas>
   <div class="inner-wrap">
-
+    <nav class="tab-bar">
+      <a class="left-off-canvas-toggle menu-icon left" href="#"><span></span></a>
+    </nav>
 
     <aside class="left-off-canvas-menu">
       <section class="small-4 columns dateTime">
