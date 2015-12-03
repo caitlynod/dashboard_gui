@@ -243,7 +243,7 @@ hr{
 	width: 100%;
 	margin-left: 1px;
 }
-.contacts1 li{
+.contacts li{
 border-left: 1px solid #333333;
 	height: 350px;
 }
@@ -251,15 +251,14 @@ border-left: 1px solid #333333;
 	width: 100%;
 	margin-left: 1px;
 }
-
-.contacts li{
-	border-left: 1px solid #333333;
-	height: 270px;
+.contactList{
+	padding: 20px;
+}
+.contactList li{
+	height: 370px;
+	padding-top: 20px;
 }
 .contacts li:first-child{
-	border:none;
-}
-.contacts1 li:first-child{
 	border:none;
 }
 .contactName{
@@ -328,10 +327,10 @@ margin-top: 50px;
     line-height: 40px;
     text-align: center;
     background: transparent;
-    color: #fff;
-    border: 1px solid #999999;
-    -moz-border-radius: 20px;
+    color: #fff;-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
+    border: 1px solid #999999;
+    
     }
         .capslock, .tab, .left-shift {
         clear: left;
@@ -371,3 +370,26 @@ margin-top: 50px;
         border-color: #e5e5e5;
         cursor: pointer;
         }
+
+/*Key Pad*/
+#keypad{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.numpad li {
+    float: left !important;
+    margin: 0 70px 10px 0;
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 40px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    font-size: 2em !important;
+    -moz-border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    border: 1px solid #999999;
+    font-family: 'Gotham';
+	font-weight: 100;
+}

@@ -8,9 +8,10 @@
 			<p class="white">Martha Lewis...</p>
 		</div>
 	</li>
-	<li>
+	<li><a href="<?php echo base_url()."index.php/dashboard/keypad";?>">
 		<img src="<?php echo base_url().'images/clock_icon.png';?>">
 		<h3 class="userhead">keypad dial</h3>
+	</a>
 	</li>
 	<li><a href="<?php echo base_url()."index.php/dashboard/contacts";?>">
 		<img src="<?php echo base_url().'images/trip_icon.png';?>">

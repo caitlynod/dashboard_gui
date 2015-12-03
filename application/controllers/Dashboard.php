@@ -69,6 +69,16 @@ class Dashboard extends CI_Controller {
 
 	}
 
+	public function keypad(){
+		$data['title'] = 'Contact Search';
+		$data['contacts'] = $this->dashModel->contacts();
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('phoneCenter/numkeys');
+		$this->load->view('Templates/footer');
+
+	}
 	public function contactSearch(){
 		$data['title'] = 'Contact Search';
 		$data['contacts'] = $this->dashModel->contacts();
