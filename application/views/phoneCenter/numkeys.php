@@ -2,7 +2,7 @@
 <div id="container">
     <a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
     <textarea class="search" id="write" maxlength="10"></textarea>
-<div class="keyboard row large-centered columns keypad">
+<div class="keyboard large-centered columns keypad">
 <ul id="keyboard" class="key small-block-grid-3 numpad">
 
 

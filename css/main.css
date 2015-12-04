@@ -1,4 +1,5 @@
 /*Border: color: #4d4c4c Blue: color: #98d5d1; White/Grey: color: #f1f1f2; Dark Blue: color: #252c2a*/
+/*----------------------GLOBAL--------------------*/
 body{
 	background: url('../images/background.png') no-repeat;
 }
@@ -18,6 +19,7 @@ p, a{
 .white{
 	color: #fff;
 }
+/*----------------------NAVIGATION--------------------*/
 
 .date{
 	margin-left: 12px;
@@ -46,10 +48,10 @@ p, a{
 	}
 
 .left-off-canvas-menu {
-width: 96%;
-background: transparent !important;
-height: 768px;
-position: absolute;
+	width: 96%;
+	background: transparent !important;
+	height: 768px;
+	position: absolute;
 }
 #mainClock{
 	font-size: 1.875em;
@@ -58,11 +60,12 @@ position: absolute;
 }
 
 .date p{
-font-family: 'Gotham';
+	font-family: 'Gotham';
 	font-weight: 100;
 	font-size: 0.75em;
-	    line-height: 1;
+	line-height: 1;
 }
+/*----------------------USER OPTIONS--------------------*/
 
 #changeUser{
 	margin-left: 80px;
@@ -90,14 +93,14 @@ font-family: 'Gotham';
 }
 .selectUser p{
 	font-family: 'Gotham';
-color: #f1f1f2;
-text-align: center;
-padding-bottom: 10px;
+	color: #f1f1f2;
+	text-align: center;
+	padding-bottom: 10px;
 }
 .userhead, .profile, h2.navOption{
-font-family: 'akashiregular';
-color: #98d5d1;
-letter-spacing: 5px;
+	font-family: 'akashiregular';
+	color: #98d5d1;
+	letter-spacing: 5px;
 }
 
 .profile, h2.navOption{
@@ -149,7 +152,7 @@ hr{
 	    margin: 0 auto;
 }
 
-/* LOGIN */
+/*----------------------LOGIN--------------------*/
 
 #loginPanel{
 	margin-top: 50px;
@@ -186,7 +189,7 @@ hr{
 	box-shadow: 0px 0px 20px #fff;
 }
 
-/* MAIN */
+/*----------------------MAIN SCREEN--------------------*/
 
 #topClock{
 	width: 100%;
@@ -238,7 +241,8 @@ hr{
 	font-size: 3em;
 	letter-spacing: 5px;
 }
-/*Contacts*/
+/*----------------------CONTACTS--------------------*/
+
 .contacts{
 	width: 100%;
 	margin-left: 1px;
@@ -251,10 +255,10 @@ hr{
 	border:none;
 }
 .contactName{
-font-family: 'akashiregular';
-color: #98d5d1;
-text-align: center;
-padding: 0;
+	font-family: 'akashiregular';
+	color: #98d5d1;
+	text-align: center;
+	padding: 0;
 
 }
 #addressbook{
@@ -321,25 +325,25 @@ p.contactName {
 }
 
 
-/*Keyboard*/
+/*----------------------KEYBOARD / NUMPAD--------------------*/
 #container {
-margin: 0 auto;
-width: 95%;
-margin-top: 30px;
-height: 100px;
+	margin: 0 auto;
+	width: 95%;
+	margin-top: 30px;
+	height: 100px;
 }
 #write {
-resize: none;
-box-shadow: none;
-font-family: 'akashiregular';
-font-size: 2.3125rem;
-color: #98d5d1;
-letter-spacing: 5px;
-text-align: center;
-background:transparent;
-border: none;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
+	resize: none;
+	box-shadow: none;
+	font-family: 'akashiregular';
+	font-size: 2.3125rem;
+	color: #98d5d1;
+	letter-spacing: 5px;
+	text-align: center;
+	background:transparent;
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 #keyboard {
 
@@ -404,7 +408,6 @@ border: none;
 	cursor: pointer;
 }
 
-/*Key Pad*/
 .keypad{
 	display: block;
 	margin: 0 auto;
@@ -429,7 +432,7 @@ border: none;
 	padding-top: 23px;
 
 }
-
+/*----------------------PAGINATION--------------------*/
 .leftArrow{
 	position: absolute;
 	right: 50px;
@@ -441,3 +444,5 @@ border: none;
 	left: 50px;
 	top: 185px;
 }
+
+/*----------------------MEDIA CENTER--------------------*/

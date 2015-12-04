@@ -1,7 +1,7 @@
 <div id="topClock" class="text-center"></div>
 <div id="container">
 	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
-	<h2 id="addressbook" class="text-center columns userhead">address book</h2>
+	<h2 id="addressbook" class="text-center userhead">address book</h2>
 	<p class="text-center">showing 6 of 23 results</p>
 	<?php echo $this->pagination->create_links();?>
     <input id="resultSlider" type="range">

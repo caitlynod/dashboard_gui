@@ -1,7 +1,7 @@
 <div id="topClock" class="text-center"></div>
 <div id="container">
 	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
-    <textarea class="search" id="write">"</textarea>
+    <textarea class="search" id="write"></textarea>
     <p class="text-center">showing 6 of 23 results</p>
    <?php echo $this->pagination->create_links();?>
     <input id="resultSlider" type="range">
@@ -10,7 +10,7 @@
     		<li><img class="navPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
         <?php endforeach;?>
     </ul>
-<div class="keyboard row large-centered columns">
+<div class="keyboard large-centered columns">
 	<ul id="keyboard" class="key">
         <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
         <li id="1" class="symbol"><span class="off">1</span><span class="on">!</span></li>

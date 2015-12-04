@@ -1,6 +1,6 @@
 <section class="row selectUser">
 	<div class="medium-12 columns user">
-		<h2 class="text-center columns userhead">please select a user</h2>
+		<h2 class="text-center userhead">please select a user</h2>
 		<p>Hello! Who will be driving today?</p>
 	</div>
 	<hr>
