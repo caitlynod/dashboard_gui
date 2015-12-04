@@ -128,18 +128,7 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function contactsSearch($q = null){
-		$this->load->library('pagination');
-		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
-		$config['total_rows'] = $this->Dash_model->getTotalRows();
-		$config['per_page'] = 6;
-		$config['num_links']  = 0;
-		$config['first_link'] = FALSE;
-		$config['last_link'] = FALSE;
-		$config['display_pages'] = FALSE;
-		$config['prev_link'] = '<i class="fa fa-arrow-left rightArrow"></i>';
-		$config['next_link'] = '<i class="fa fa-arrow-right leftArrow"></i>';
-		$this->pagination->initialize($config);
-		$contactList = $this->Dash_model->contacts($q,$config['per_page'],$offset);
+		$contactList = $this->Dash_model->searchContacts($q);
 		$contacts = json_encode($contactList);
 		echo $contacts;
 	}

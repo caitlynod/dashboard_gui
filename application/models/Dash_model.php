@@ -15,8 +15,7 @@ class Dash_model extends CI_Model {
 	return $sql->result_array();
 	}
 
-	public function contacts($limit, $offset){
-		//$this->db->limit(6);
+	public function contacts($q,$limit, $offset){
 		$sql = $this->db->get('tbl_contacts', $limit, $offset);
 		return $sql->result_array();
 	}
