@@ -30,7 +30,6 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 		var searchResults = document.querySelector("#searchResults");
 		if (results.readyState==4 || results.readyState=="complete") {
 			var contact = JSON.parse(results.responseText);
-			console.log(contact);
 			searchResults.innerHTML = "";
 			for(var i=0;i<contact.length;i++){
 				searchResults.innerHTML += '<li><img class="navPic"  src="'+baseURL+'images/'+contact[i].contacts_img+'" ><h2 class="contactName">'+contact[i].contacts_fname+'</h2><p class="contactName">'+contact[i].contacts_lname+'</li>';
