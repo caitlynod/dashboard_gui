@@ -6,10 +6,10 @@
 	<hr>
 	<div class="users">
 		<ul class="small-block-grid-5 columns userProf">
-			<li><a href="<?php echo base_url();?>index.php/dashboard/login"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Caitlyn</h2></a></li>
-            <li><a href="<?php echo base_url();?>index.php/dashboard/login"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Matthew</h2></a></li>
-            <li><a href="<?php echo base_url();?>index.php/dashboard/login"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Tanner</h2></a></li>
-            <li><a href="<?php echo base_url();?>index.php/dashboard/login"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Vanessa</h2></a></li>
+			<li><a href="<?php echo base_url();?>index.php/dashboard/login/4"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Caitlyn</h2></a></li>
+            <li><a href="<?php echo base_url();?>index.php/dashboard/login/15"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Matthew</h2></a></li>
+            <li><a href="<?php echo base_url();?>index.php/dashboard/login/18"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Tanner</h2></a></li>
+            <li><a href="<?php echo base_url();?>index.php/dashboard/login/20"><img class="profPic" src="<?php echo base_url().'images/user_icon.png';?>"><h2 class="profile">Vanessa</h2></a></li>
             <li><img class="profPic" src="<?php echo base_url().'images/adduser_icon.png';?>"><h2 class="profile">add user</h2></li>
         </ul>
     </div>
