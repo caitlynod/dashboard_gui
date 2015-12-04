@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Dashboard extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('dashModel');
+		$this->load->model('Dash_model');
 	}
 	
 	public function index(){
@@ -62,7 +62,7 @@ class Dashboard extends CI_Controller {
 		$data['title'] = 'Contact Search';
 		$this->load->library('pagination');
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contacts/';
-		$config['total_rows'] = $this->dashModel->getTotalRows();
+		$config['total_rows'] = $this->Dash_model->getTotalRows();
 		$config['per_page'] = 6;
 		$config['num_links']  = 0;
 		$config['first_link'] = FALSE;
@@ -72,7 +72,7 @@ class Dashboard extends CI_Controller {
 		$config['next_link'] = '<i class="fa fa-arrow-right leftArrow"></i>';
 		$this->pagination->initialize($config);
 
-		$data['contacts'] = $this->dashModel->contacts($config['per_page'],$offset);
+		$data['contacts'] = $this->Dash_model->contacts($config['per_page'],$offset);
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -94,7 +94,7 @@ class Dashboard extends CI_Controller {
 		$data['title'] = 'Contact Search';
 		$this->load->library('pagination');
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
-		$config['total_rows'] = $this->dashModel->getTotalRows();
+		$config['total_rows'] = $this->Dash_model->getTotalRows();
 		$config['per_page'] = 6;
 		$config['num_links']  = 0;
 		$config['first_link'] = FALSE;
@@ -104,7 +104,7 @@ class Dashboard extends CI_Controller {
 		$config['next_link'] = '<i class="fa fa-arrow-right leftArrow"></i>';
 		$this->pagination->initialize($config);
 
-		$data['contacts'] = $this->dashModel->contacts($config['per_page'],$offset);
+		$data['contacts'] = $this->Dash_model->contacts($config['per_page'],$offset);
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -121,7 +121,7 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function contactsSearch($q = null){
-		$contactList = $this->dashModel->searchContacts($q);
+		$contactList = $this->Dash_model->searchContacts($q);
 		$contacts = json_encode($contactList);
 		echo $contacts;
 	}
