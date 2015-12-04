@@ -79,9 +79,22 @@ class Dashboard extends CI_Controller {
 		$this->load->view('Templates/footer');
 
 	}
-	public function contactSearch(){
+	public function contactSearch($offset = null){
 		$data['title'] = 'Contact Search';
-		$data['contacts'] = $this->dashModel->contacts();
+		$this->load->library('pagination');
+		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
+		$config['total_rows'] = $this->dashModel->getTotalRows();
+		$config['per_page'] = 6;
+		$config['num_links']  = FALSE;
+		$config['first_link'] = FALSE;
+		$config['last_link'] = FALSE;
+		$config['prev_link'] = '<i class="fa fa-arrow-left"></i>';
+		$config['next_link'] = '<i class="fa fa-arrow-right"></i>';
+		$this->pagination->initialize($config);
+
+		$data['contacts'] = $this->dashModel->contacts($config['per_page'],$offset);
+		$data['pagination'] = $this->pagination->create_links();
+
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');

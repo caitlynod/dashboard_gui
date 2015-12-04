@@ -3,6 +3,7 @@
 	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
     <textarea class="search" id="write"></textarea>
     <p class="text-center">showing 6 of 23 results</p>
+    <?php echo $pagination; ?>
     <input id="resultSlider" type="range">
     <ul id="searchResults" class="small-block-grid-6 columns contacts">
         <?php foreach($contacts as $contact):?>
