@@ -1,23 +1,29 @@
 if(window.location.href.indexOf("contactSearch") !== -1){
 	var results;
+	var searchText = "";
 	var searchField = document.querySelector(".search");
 	var searchKey = document.querySelectorAll(".key li");
 	var form = document.querySelector(".userForm");
 
 	[].forEach.call(searchKey, function(el) {
 		el.addEventListener("click", function(){
-
-			ajaxGetEmp(searchField.innerHTML);
+			ajaxGetEmp(this.id);
 		}, false);
 	});
 
 	function ajaxGetEmp(q) {
-	results=GetXmlHttpObject(); //creates the JS data handling object by calling function at bottom
-	var url = baseURL + "index.php/Dashboard/contactsSearch/"+q;
-
-	results.onreadystatechange=stateChanged; //listener for data returning from the server
-	results.open("GET",url,true);
-	results.send(null);
+		if(q === "del"){
+			searchText = searchText.substring(0,searchText.length-1);
+		}else{
+			searchText += q;
+		}
+		console.log(searchText);
+		results=GetXmlHttpObject();
+		
+		var url = baseURL + "index.php/Dashboard/contactsSearch/"+searchText;
+		results.onreadystatechange=stateChanged;
+		results.open("GET",url,true);
+		results.send(null);
 	}
 
 	function stateChanged() {

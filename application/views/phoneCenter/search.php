@@ -25,7 +25,7 @@
         <li id="0" class="symbol"><span class="off">0</span><span class="on">)</span></li>
         <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
         <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
-        <li class="delete lastitem">delete</li>
+        <li id="del" class="delete lastitem">delete</li>
         <li class="tab">tab</li>
         <li id="q" class="letter">q</li>
         <li id="w" class="letter">w</li>
