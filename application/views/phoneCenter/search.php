@@ -2,12 +2,12 @@
 <div id="container">
 	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
     <textarea class="search" id="write"></textarea>
-    <p class="text-center">showing 6 of 23 results</p>
+    <p class="text-center totalContact">showing <span id="showing">6</span> of <span id="total">24</span> results</p>
    <?php echo $this->pagination->create_links();?>
     <input id="resultSlider" type="range">
     <ul id="searchResults" class="small-block-grid-6 columns contacts">
         <?php foreach($contacts as $contact):?>
-    		<li><img class="navPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
+    		<li class="contact"><img class="navPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
         <?php endforeach;?>
     </ul>
 <div class="keyboard large-centered columns">

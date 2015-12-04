@@ -53,12 +53,27 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 			var contact = JSON.parse(results.responseText);
 			searchResults.innerHTML = "";
 			for(var i=0;i<contact.length;i++){
-				searchResults.innerHTML += '<li><img class="navPic"  src="'+baseURL+'images/'+contact[i].contacts_img+'" ><h2 class="contactName">'+contact[i].contacts_fname+'</h2><p class="contactName">'+contact[i].contacts_lname+'</li>';
+				searchResults.innerHTML += '<li class="contact"><img class="navPic"  src="'+baseURL+'images/'+contact[i].contacts_img+'" ><h2 class="contactName">'+contact[i].contacts_fname+'</h2><p class="contactName">'+contact[i].contacts_lname+'</li>';
 			}
 			if(contact.length === 0){
 				//console.log("No Results");
 				searchResults.innerHTML = "<h2 id='noResult' class='contactName'>No Results</h2>";
 			}
+
+        //Creates arrow pagination for alumni section
+	var contactList = document.querySelectorAll(".contact");
+	var totalContact = contactList.length;
+	var showing = document.querySelector("#showing");
+	var total = document.querySelector("#total");
+
+
+	showing.innerHTML = totalContact;
+	total.innerHTML = totalContact;
+	if(searchText == ""){
+		total.innerHTML = 24;
+	}
+
+
 		}
 	}
 

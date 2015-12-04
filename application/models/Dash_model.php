@@ -31,23 +31,5 @@ class Dash_model extends CI_Model {
 
 	}
 
-	public function users($id){
-		$sql = $this->db->get_where('tbl_contacts');
-		 if($sql->num_rows()>0){
-    foreach($sql->result() as $rows){
-      //add all data to session
-      $newdata = array(
-        'contacts_id' => $rows->users_id,
-        'logged_in' => TRUE,
-        );
-    }
-    $this->session->set_userdata($newdata);
-    
-    return true;
-  }
-  return false;
-
-	}
-
 }
 	

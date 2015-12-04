@@ -28,10 +28,7 @@ class Dashboard extends CI_Controller {
 		
 	}
 
-	public function volt($id = null){
-		$id = $this->session->userdata('contacts_id');
-		$data['id'] = $id;
-		$data['user'] = $this->Dash_model->getUser($id);
+	public function volt(){
 		$url = "http://api.openweathermap.org/data/2.5/weather?q=London,CA&appid=1879d157061bd7bc174974e0ace8ef69";
 		$json=file_get_contents($url);
 		$tempData=json_decode($json, true);
@@ -66,6 +63,7 @@ class Dashboard extends CI_Controller {
 
 	public function contacts($offset = null){
 		$data['title'] = 'Contact Search';
+		$data['total'] = $this->Dash_model->getTotalRows();
 		$this->load->library('pagination');
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contacts/';
 		$config['total_rows'] = $this->Dash_model->getTotalRows();
