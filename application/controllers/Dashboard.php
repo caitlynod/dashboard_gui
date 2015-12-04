@@ -58,9 +58,21 @@ class Dashboard extends CI_Controller {
 		$this->load->view('Templates/footer');
 
 	}
-	public function contacts(){
+	public function contacts($offset = null){
 		$data['title'] = 'Contact Search';
-		$data['contacts'] = $this->dashModel->contacts();
+		$this->load->library('pagination');
+		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contacts/';
+		$config['total_rows'] = $this->dashModel->getTotalRows();
+		$config['per_page'] = 6;
+		$config['num_links']  = 0;
+		$config['first_link'] = FALSE;
+		$config['last_link'] = FALSE;
+		$config['display_pages'] = FALSE;
+		$config['prev_link'] = '<i class="fa fa-arrow-left rightArrow"></i>';
+		$config['next_link'] = '<i class="fa fa-arrow-right leftArrow"></i>';
+		$this->pagination->initialize($config);
+
+		$data['contacts'] = $this->dashModel->contacts($config['per_page'],$offset);
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -71,7 +83,6 @@ class Dashboard extends CI_Controller {
 
 	public function keypad(){
 		$data['title'] = 'Contact Search';
-		$data['contacts'] = $this->dashModel->contacts();
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -85,16 +96,15 @@ class Dashboard extends CI_Controller {
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
 		$config['total_rows'] = $this->dashModel->getTotalRows();
 		$config['per_page'] = 6;
-		$config['num_links']  = FALSE;
+		$config['num_links']  = 0;
 		$config['first_link'] = FALSE;
 		$config['last_link'] = FALSE;
-		$config['prev_link'] = '<i class="fa fa-arrow-left"></i>';
-		$config['next_link'] = '<i class="fa fa-arrow-right"></i>';
+		$config['display_pages'] = FALSE;
+		$config['prev_link'] = '<i class="fa fa-arrow-left rightArrow"></i>';
+		$config['next_link'] = '<i class="fa fa-arrow-right leftArrow"></i>';
 		$this->pagination->initialize($config);
 
 		$data['contacts'] = $this->dashModel->contacts($config['per_page'],$offset);
-		$data['pagination'] = $this->pagination->create_links();
-
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');

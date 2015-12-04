@@ -10,14 +10,14 @@ class DashModel extends CI_Model {
   	$this->db->select('*');
 	$this->db->from('tbl_contacts');
 	$this->db->like('contacts_fname', $q, 'after');
-	//$this->db->limit(6);
+	$this->db->limit(6);
 	$sql = $this->db->get();
 	return $sql->result_array();
 	}
 
-	public function contacts(){
+	public function contacts($limit, $offset){
 		//$this->db->limit(6);
-		$sql = $this->db->get('tbl_contacts');
+		$sql = $this->db->get('tbl_contacts', $limit, $offset);
 		return $sql->result_array();
 	}
 

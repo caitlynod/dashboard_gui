@@ -1,7 +1,7 @@
 <div id="topClock" class="text-center"></div>
 <div id="container">
     <a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
-    <textarea class="search" id="write" rows="4" cols="50" maxlength="10"></textarea>
+    <textarea class="search" id="write" maxlength="10"></textarea>
 <div class="keyboard row large-centered columns keypad">
 <ul id="keyboard" class="key small-block-grid-3 numpad">
 
