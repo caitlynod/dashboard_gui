@@ -17,7 +17,8 @@ class Dashboard extends CI_Controller {
 		
 	}
 
-	public function login(){
+	public function login($id){
+		$data['user'] = $this->Dash_model->getUser($id);
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
 		$this->load->view('Templates/header', $data);
@@ -27,7 +28,10 @@ class Dashboard extends CI_Controller {
 		
 	}
 
-	public function volt(){
+	public function volt($id = null){
+		$id = $this->session->userdata('contacts_id');
+		$data['id'] = $id;
+		$data['user'] = $this->Dash_model->getUser($id);
 		$url = "http://api.openweathermap.org/data/2.5/weather?q=London,CA&appid=1879d157061bd7bc174974e0ace8ef69";
 		$json=file_get_contents($url);
 		$tempData=json_decode($json, true);
