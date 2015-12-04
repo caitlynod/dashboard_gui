@@ -4,6 +4,11 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 	var searchField = document.querySelector(".search");
 	var searchKey = document.querySelectorAll(".key li");
 	var form = document.querySelector(".userForm");
+	var pageSlider = document.querySelector("#resultSlider");
+	var rArrow = document.querySelector(".rightArrow");
+	var lArrow = document.querySelector(".leftArrow");
+
+	console.log(pageSlider.value);
 
 	[].forEach.call(searchKey, function(el) {
 		el.addEventListener("click", function(){
@@ -17,7 +22,23 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 		}else{
 			searchText += q;
 		}
-		console.log(searchText);
+
+		if(searchText === ""){
+			if(rArrow){
+			rArrow.style.display = "block";
+			}
+			if(lArrow){
+			lArrow.style.display = "block";
+			}
+		}else{
+			if(rArrow){
+			rArrow.style.display = "none";
+			}
+			if(lArrow){
+			lArrow.style.display = "none";
+			}
+		}
+
 		results=GetXmlHttpObject();
 		
 		var url = baseURL + "index.php/Dashboard/contactsSearch/"+searchText;
