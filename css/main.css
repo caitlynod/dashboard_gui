@@ -279,7 +279,7 @@ hr{
 #resultSlider{
 	-webkit-appearance: none;
 	display: block;
-	margin: 20px auto 15px;
+	margin: 15px auto;
 	width: 90%;
 	border-radius: 10px;
 }
@@ -459,13 +459,13 @@ li#del.del{
 .leftArrow{
 	position: absolute;
 	right: 50px;
-	top: 185.5px;
+	top: 176px;
 }
 
 .rightArrow{
 	position: absolute;
 	left: 50px;
-	top: 185.5px;
+	top: 176px;
 }
 
 /*----------------------MEDIA CENTER--------------------*/
