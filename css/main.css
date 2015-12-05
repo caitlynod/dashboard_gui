@@ -380,7 +380,7 @@ p.contactName {
 }
 
 .capslock, .tab, .left-shift {
-	clear: left;
+	clear: both;
 }
 
 #keyboard .tab, #keyboard .delete {
@@ -477,12 +477,61 @@ li#del.del{
 
 /*----------------------SEARCH--------------------*/
 
-.red{
-	background-color: red;
-}
-
 .voiceOn {
 	background: -moz-linear-gradient(top, #98d5d1 0%, #252c2a 100%) !important;
 	background: -webkit-linear-gradient(top, #98d5d1 0%,#252c2a 100%) !important;
 	background: linear-gradient(to bottom, #98d5d1 0%,#252c2a 100%) !important;
 }
+
+.searchkeys{
+	display: block;
+	width: 100% !important;
+	margin-left: 20px !important;
+}
+.searchkeys li {
+	float: right;
+	padding: 0 !important;
+    margin: 0 0px 10px 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 30px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    font-size: 1em !important;
+    -moz-border-radius: 40px !important;
+    -webkit-border-radius: 20px !important;
+    border: 1px solid #999999;
+    font-family: 'Gotham';
+	font-weight: 100;
+	padding-top: 23px;
+}
+.empty{
+	border: none !important;
+}
+
+.centerkeys{
+margin-right: 30px;
+}
+
+.searchkeys li.spacekey{
+	clear: both !important;
+	margin-left: 55px !important;
+	width: 450px !important;
+}
+
+.sidebar{
+	height:690px !important;
+	margin-bottom: 0 !important;
+}
+#placeSearch{
+	height: 220px;
+	overflow: scroll;
+	margin-left: 50px;
+	padding-top: 20px;
+}
+.searchtitle, .searchloc, .searchdist{
+	margin-right: 50px;
+}
+
+/*----------------------------------------------*/

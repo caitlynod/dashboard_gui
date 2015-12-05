@@ -11,7 +11,7 @@
         <?php endforeach;?>
     </ul>
 <div class="keyboard large-centered columns">
-	<ul id="keyboard" class="key">
+	<ul id="keyboard" class="key ">
         <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
         <li id="1" class="symbol"><span class="off">1</span><span class="on">!</span></li>
         <li id="2" class="symbol"><span class="off">2</span><span class="on">@</span></li>
