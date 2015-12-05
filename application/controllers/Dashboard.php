@@ -19,7 +19,11 @@ class Dashboard extends CI_Controller {
 
 	public function login($id){
 		$data['user'] = $this->Dash_model->getUser($id);
-		$this->session->set_userdata('name', $data['user']['contacts_fname']);
+		$userArray = array(
+			'name' => $data['user']['contacts_fname'], 
+			'lname' => $data['user']['contacts_lname']
+			);
+		$this->session->set_userdata($userArray);
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
 		$data['name'] = $this->session->userdata('name');
