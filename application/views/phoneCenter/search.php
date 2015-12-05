@@ -3,7 +3,7 @@
 	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
     <textarea class="search" id="write"></textarea>
     <p class="text-center totalContact">showing <span id="showing">6</span> of <span id="total">24</span> results</p>
-   <?php echo $this->pagination->create_links();?>
+    <?php echo $this->pagination->create_links();?>
     <input id="resultSlider" type="range" min="1" value="1" max="4">
     <ul id="searchResults" class="small-block-grid-6 columns contacts">
         <?php foreach($contacts as $contact):?>

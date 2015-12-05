@@ -14,6 +14,39 @@
 		}
 	}
 
+    if(window.location.href.indexOf("contacts") !== -1){
+        var pageSlider = document.querySelector("#resultSlider");
+
+        if(window.location.href.indexOf("contacts/6") !== -1){
+            pageSlider.value = 2;
+        }
+
+        if(window.location.href.indexOf("contacts/12") !== -1){
+            pageSlider.value = 3;
+        }
+
+        if(window.location.href.indexOf("contacts/18") !== -1){
+            pageSlider.value = 4;
+        }
+
+        function sliderVal(){
+            if(pageSlider.value == 1){
+                document.location.href = baseURL+"index.php/dashboard/contacts";
+            }
+            if(pageSlider.value == 2){
+                document.location.href = baseURL+"index.php/dashboard/contacts/6";
+            }
+            if(pageSlider.value == 3){
+                document.location.href = baseURL+"index.php/dashboard/contacts/12";
+            }
+            if(pageSlider.value == 4){
+                document.location.href = baseURL+"index.php/dashboard/contacts/18";
+            }
+        }
+
+        pageSlider.addEventListener("change", sliderVal, false);
+    }
+
 })();
 
 $(function(){
