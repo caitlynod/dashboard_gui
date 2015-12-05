@@ -70,7 +70,7 @@ class Dashboard extends CI_Controller {
 		$data['name'] = $this->session->userdata('name');
 		$data['total'] = $this->Dash_model->getTotalRows();
 		$this->load->library('pagination');
-		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contacts/';
+		$config['base_url'] = base_url().'index.php/dashboard/contacts/';
 		$config['total_rows'] = $this->Dash_model->getTotalRows();
 		$config['per_page'] = 6;
 		$config['num_links']  = 0;
@@ -105,7 +105,7 @@ class Dashboard extends CI_Controller {
 		$data['title'] = 'Contact Search';
 		$data['name'] = $this->session->userdata('name');
 		$this->load->library('pagination');
-		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
+		$config['base_url'] = base_url().'index.php/dashboard/contactSearch/';
 		$config['total_rows'] = $this->Dash_model->getTotalRows();
 		$config['per_page'] = 6;
 		$config['num_links']  = 0;

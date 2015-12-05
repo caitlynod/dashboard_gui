@@ -279,7 +279,7 @@ hr{
 #resultSlider{
 	-webkit-appearance: none;
 	display: block;
-	margin: 25px auto;
+	margin: 20px auto 15px;
 	width: 90%;
 	border-radius: 10px;
 }
