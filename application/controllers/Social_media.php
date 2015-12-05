@@ -8,13 +8,13 @@ class Social_media extends CI_Controller {
 	}
 	
 	public function index(){
-		date_default_timezone_set('America/Toronto');
-		$data['title'] = 'Dashboard';
+		$data['title'] = 'Social Media';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
-		$this->load->view('navigation/navigation');
-		$this->load->view('navigation/chooseUser');
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
 		$this->load->view('Templates/footer');
-		
+
 	}
 
 	public function login($id){

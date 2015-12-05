@@ -6,4 +6,14 @@ class GPS extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Dash_model');
 	}
+
+	public function index(){
+		$data['title'] = 'GPS';
+		$data['name'] = $this->session->userdata('name');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('Templates/footer');
+
+	}
 }
