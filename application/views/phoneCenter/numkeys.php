@@ -1,6 +1,6 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span> | <?php echo $title;?></div>
 <div id="container">
-    <a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
+    <a href="<?php echo base_url()."index.php/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
   <img id="call" src="<?php echo base_url();?>images/call_icon.png">
 <img id="endCall" src="<?php echo base_url();?>images/end_icon.png">
     <textarea class="search" id="write" maxlength="10"></textarea>

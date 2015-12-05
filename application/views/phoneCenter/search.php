@@ -1,6 +1,6 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span> | <?php echo $title;?></div>
 <div id="container">
-	<a href="<?php echo base_url()."index.php/dashboard/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
+	<a href="<?php echo base_url()."index.php/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
     <textarea class="search" id="write"></textarea>
     <p class="text-center totalContact">showing <span id="showing">6</span> of <span id="total">24</span> results</p>
     <?php echo $this->pagination->create_links();?>

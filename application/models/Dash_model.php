@@ -17,6 +17,7 @@ class Dash_model extends CI_Model {
 	}
 
 	public function contacts($q,$limit, $offset){
+		//$this->db->limit(4);
 		$this->db->order_by('contacts_fname');
 		$sql = $this->db->get('tbl_contacts', $limit, $offset);
 		return $sql->result_array();
