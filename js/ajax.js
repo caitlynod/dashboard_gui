@@ -8,7 +8,34 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 	var rArrow = document.querySelector(".rightArrow");
 	var lArrow = document.querySelector(".leftArrow");
 
-	console.log(pageSlider.value);
+	if(window.location.href.indexOf("contactSearch/6") !== -1){
+		pageSlider.value = 2;
+	}
+
+	if(window.location.href.indexOf("contactSearch/12") !== -1){
+		pageSlider.value = 3;
+	}
+
+	if(window.location.href.indexOf("contactSearch/18") !== -1){
+		pageSlider.value = 4;
+	}
+
+	function sliderVal(){
+		if(pageSlider.value == 1){
+			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch";
+		}
+		if(pageSlider.value == 2){
+			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/6";
+		}
+		if(pageSlider.value == 3){
+			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/12";
+		}
+		if(pageSlider.value == 4){
+			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/18";
+		}
+	}
+
+	pageSlider.addEventListener("change", sliderVal, false);
 
 	[].forEach.call(searchKey, function(el) {
 		el.addEventListener("click", function(){
@@ -30,6 +57,8 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 			if(lArrow){
 			lArrow.style.display = "block";
 			}
+			pageSlider.min = 1;
+			pageSlider.max = 4;
 		}else{
 			if(rArrow){
 			rArrow.style.display = "none";
@@ -37,6 +66,10 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 			if(lArrow){
 			lArrow.style.display = "none";
 			}
+			pageSlider.min = 0;
+			pageSlider.value = 1;
+			pageSlider.max = 2;
+			pageSlider.disabled = true;
 		}
 
 		results=GetXmlHttpObject();

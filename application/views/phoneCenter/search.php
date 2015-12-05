@@ -4,7 +4,7 @@
     <textarea class="search" id="write"></textarea>
     <p class="text-center totalContact">showing <span id="showing">6</span> of <span id="total">24</span> results</p>
    <?php echo $this->pagination->create_links();?>
-    <input id="resultSlider" type="range">
+    <input id="resultSlider" type="range" min="1" value="1" max="4">
     <ul id="searchResults" class="small-block-grid-6 columns contacts">
         <?php foreach($contacts as $contact):?>
     		<li class="contact"><img class="navPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
