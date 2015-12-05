@@ -138,4 +138,10 @@ class Dashboard extends CI_Controller {
 		$contacts = json_encode($contactList);
 		echo $contacts;
 	}
+
+	public function placeSearch($q = null){
+		$placeList = $this->Dash_model->searchPlaces($q);
+		$places = json_encode($placeList);
+		echo $places;
+	}
 }

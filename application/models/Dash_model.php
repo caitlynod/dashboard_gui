@@ -33,5 +33,14 @@ class Dash_model extends CI_Model {
 		return $sql->row_array();
 	}
 
+	public function searchPlaces($q){
+		$this->db->select('*');
+		$this->db->from('tbl_search');
+		$this->db->order_by('search_place');
+		$this->db->like('search_place', $q, 'after');
+		$sql = $this->db->get();
+		return $sql->result_array();
+	}
+
 }
 	
