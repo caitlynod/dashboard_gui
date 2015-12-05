@@ -1,39 +1,36 @@
-(function(){
-			console.log("fired");
-			var latlng = new google.maps.LatLng(42.983151,-81.25067);
+function initMap() {
+  var directionsDisplay = new google.maps.DirectionsRenderer;
+  var directionsService = new google.maps.DirectionsService;
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    center: {lat: 41.85, lng: -87.65}
+  });
+  directionsDisplay.setMap(map);
+  directionsDisplay.setPanel(document.getElementById('right-panel'));
 
-			if(navigator.geolocation){
-				navigator.geolocation.getCurrentPosition(showPosition, showFail);
-			}else{
-				console.log('no geolocation for you!');
-			}
+  var control = document.getElementById('floating-panel');
+  control.style.display = 'block';
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
-			function showPosition(e){
-				initialize(e.coords.latitude, e.coords.longitude);
+  var onChangeHandler = function() {
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  };
+  document.getElementById('start').addEventListener('change', onChangeHandler);
+  document.getElementById('end').addEventListener('change', onChangeHandler);
+}
 
-
-
-			}
-
-			function showFail(){
-				console.log('no geolocation for you!');
-			}
-
-			function initialize(){
-
-				var mapOptions = {
-					center : latlng,
-					zoom: 18,
-					scrollwheel: false,
-				};
-			var marker = new google.maps.Marker({
-				position: latlng,
-				map: map,
-				animation: google.maps.Animation.DROP,
-				title: 'Hello World'
-			});
-
-			var map = new google.maps.Map(document.querySelector("#mapCanvas"), mapOptions);
-			marker.setMap(map);
-			}
-		})();
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+  var start = document.getElementById('start').value;
+  var end = document.getElementById('end').value;
+  directionsService.route({
+    origin: start,
+    destination: end,
+    travelMode: google.maps.TravelMode.DRIVING
+  }, function(response, status) {
+    if (status === google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
+}

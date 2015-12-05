@@ -14,6 +14,7 @@ class Phone extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('phoneCenter/phone');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/phoneFooter');
 
 	}
 
@@ -39,6 +40,7 @@ class Phone extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('phoneCenter/contacts');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/phoneFooter');
 
 	}
 
@@ -50,10 +52,11 @@ class Phone extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('phoneCenter/numkeys');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/phoneFooter');
 
 	}
 
-	public function contactSearch($offset = null){
+	public function contactView($offset = null){
 		$data['title'] = 'Phone';
 		$data['name'] = $this->session->userdata('name');
 		$this->load->library('pagination');
@@ -74,18 +77,10 @@ class Phone extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('phoneCenter/search');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/phoneFooter');
 	}
 
-	public function search(){
-		$data['title'] = 'Search';
-		$data['name'] = $this->session->userdata('name');
-		$this->load->view('Templates/header', $data);
-		$this->load->view('navigation/navigationClosed');
-		$this->load->view('navigation/mainNav');
-		$this->load->view('searchCenter/searchVoice');
-		$this->load->view('Templates/footer');
 
-	}
 
 	public function contactsSearch($q = null){
 		$contactList = $this->Dash_model->searchContacts($q);

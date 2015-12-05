@@ -1,7 +1,7 @@
 if(window.location.href.indexOf("/Search") !== -1){
 	var results;
 	var searchText = "";
-	var searchField = document.querySelector(".search");
+	var searchField = document.querySelector(".searchField");
 	var searchKey = document.querySelectorAll(".key li");
 	var form = document.querySelector(".userForm");
 	

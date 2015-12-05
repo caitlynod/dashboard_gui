@@ -17,6 +17,7 @@ class Social_media extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('socialCenter/social');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
 
 	}
 }

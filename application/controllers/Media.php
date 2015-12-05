@@ -16,6 +16,7 @@ class Media extends CI_Controller {
 		$this->load->view('navigation/mainNav');
 		$this->load->view('mediaCenter/media');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
 
 	}
 

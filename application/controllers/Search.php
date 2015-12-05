@@ -14,7 +14,10 @@ class Search extends CI_Controller {
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
 		$this->load->view('searchCenter/searchVoice');
+		$this->load->view('searchCenter/sidebar');
+		$this->load->view('searchCenter/search');
 		$this->load->view('Templates/footer');
+		$this->load->view('Templates/searchFooter');
 
 	}
 	

@@ -1,4 +1,4 @@
-if(window.location.href.indexOf("contactSearch") !== -1){
+if(window.location.href.indexOf("contactView") !== -1){
 	var results;
 	var searchText = "";
 	var searchField = document.querySelector(".search");
@@ -113,16 +113,16 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 	function GetXmlHttpObject() { //called at the start of the script to kick off the whole process
 	results=null;
 	try {
-	 results=new XMLHttpRequest(); //for modern browsers that aren't IE
-	 }
-	catch(e) {
-	 try {
-	  results=new ActiveXObject("Msxml2.XMLHTTP"); //newer IE versions
-	  }
-	catch(e) {
-	  results=new ActiveXObject("Microsoft.XMLHTTP"); //older IE versions
-	  }
-	 }
-	return results;
+		results=new XMLHttpRequest(); //for modern browsers that aren't IE
 	}
+	catch(e) {
+		try {
+			results=new ActiveXObject("Msxml2.XMLHTTP"); //newer IE versions
+		}
+		catch(e) {
+			results=new ActiveXObject("Microsoft.XMLHTTP"); //older IE versions
+		}
+	}
+	return results;
+}
 }
