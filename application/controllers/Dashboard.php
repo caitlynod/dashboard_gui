@@ -60,7 +60,7 @@ class Dashboard extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
-		$this->load->view('phone');
+		$this->load->view('phoneCenter/phone');
 		$this->load->view('Templates/footer');
 
 	}
