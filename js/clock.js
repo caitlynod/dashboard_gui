@@ -1,7 +1,7 @@
 (function(){
 
   var maintime = document.querySelector("#mainClock");
-  var toptime = document.querySelector("#topClock");
+  var toptime = document.querySelector("#topClockTime");
   var dashtime = document.querySelector("#dashClock");
   var t = true;
 
