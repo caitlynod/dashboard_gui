@@ -17,16 +17,24 @@
     if(window.location.href.indexOf("contacts") !== -1){
         var pageSlider = document.querySelector("#resultSlider");
 
-        if(window.location.href.indexOf("contacts/6") !== -1){
+        if(window.location.href.indexOf("contacts/4") !== -1){
             pageSlider.value = 2;
         }
 
-        if(window.location.href.indexOf("contacts/12") !== -1){
+        if(window.location.href.indexOf("contacts/8") !== -1){
             pageSlider.value = 3;
         }
 
-        if(window.location.href.indexOf("contacts/18") !== -1){
+        if(window.location.href.indexOf("contacts/12") !== -1){
             pageSlider.value = 4;
+        }
+
+        if(window.location.href.indexOf("contacts/16") !== -1){
+            pageSlider.value = 5;
+        }
+
+        if(window.location.href.indexOf("contacts/20") !== -1){
+            pageSlider.value = 6;
         }
 
         function sliderVal(){
@@ -34,13 +42,19 @@
                 document.location.href = baseURL+"index.php/dashboard/contacts";
             }
             if(pageSlider.value == 2){
-                document.location.href = baseURL+"index.php/dashboard/contacts/6";
+                document.location.href = baseURL+"index.php/dashboard/contacts/4";
             }
             if(pageSlider.value == 3){
-                document.location.href = baseURL+"index.php/dashboard/contacts/12";
+                document.location.href = baseURL+"index.php/dashboard/contacts/8";
             }
             if(pageSlider.value == 4){
-                document.location.href = baseURL+"index.php/dashboard/contacts/18";
+                document.location.href = baseURL+"index.php/dashboard/contacts/12";
+            }
+            if(pageSlider.value == 5){
+                document.location.href = baseURL+"index.php/dashboard/contacts/16";
+            }
+            if(pageSlider.value == 6){
+                document.location.href = baseURL+"index.php/dashboard/contacts/20";
             }
         }
 
