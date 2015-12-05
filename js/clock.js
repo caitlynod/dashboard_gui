@@ -43,7 +43,9 @@
 
       // Update the time display
       maintime.innerHTML = currentTimeStringMain;
-      toptime.innerHTML = currentTimeStringMain;
+      if(toptime){
+        toptime.innerHTML = currentTimeStringMain;
+      }
       if(dashtime){
         dashtime.innerHTML = currentHours + ":" + currentMinutes;
       }

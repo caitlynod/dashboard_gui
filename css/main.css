@@ -277,28 +277,32 @@ hr{
 	margin-top: 75px;
 }
 #resultSlider{
+	-webkit-appearance: none;
 	display: block;
 	margin: 25px auto;
 	width: 90%;
+	border-radius: 10px;
 }
 #resultSlider::-webkit-slider-runnable-track {
     background: #98d5d1;
     height: 5px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 #resultSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     border: none;
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background: white;
+    margin-top: -8px;
 }
 #resultSlider::-moz-range-track {
     background: #98d5d1;
     height: 5px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 #resultSlider::-moz-range-thumb {
     border: none;
@@ -452,13 +456,13 @@ li#del.del{
 .leftArrow{
 	position: absolute;
 	right: 50px;
-	top: 190px;
+	top: 185.5px;
 }
 
 .rightArrow{
 	position: absolute;
 	left: 50px;
-	top: 190px;
+	top: 185.5px;
 }
 
 /*----------------------MEDIA CENTER--------------------*/
