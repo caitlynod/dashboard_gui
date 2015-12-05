@@ -453,6 +453,7 @@ li#del.del{
 }
 #numhr{
 	width: 65%;
+	margin-bottom: 20px;
 }
 
 /*----------------------PAGINATION--------------------*/
