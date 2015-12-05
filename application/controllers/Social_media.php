@@ -9,7 +9,6 @@ class Social_media extends CI_Controller {
 	
 
 	public function index(){
-		
 		$data['title'] = 'Social Media';
 		$data['name'] = $this->session->userdata('name');
 		$data['lname'] = $this->session->userdata('lname');
