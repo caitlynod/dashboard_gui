@@ -22,16 +22,16 @@ if(window.location.href.indexOf("contactSearch") !== -1){
 
 	function sliderVal(){
 		if(pageSlider.value == 1){
-			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch";
+			document.location.href = baseURL+"index.php/dashboard/contactSearch";
 		}
 		if(pageSlider.value == 2){
-			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/6";
+			document.location.href = baseURL+"index.php/dashboard/contactSearch/6";
 		}
 		if(pageSlider.value == 3){
-			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/12";
+			document.location.href = baseURL+"index.php/dashboard/contactSearch/12";
 		}
 		if(pageSlider.value == 4){
-			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/18";
+			document.location.href = baseURL+"index.php/dashboard/contactSearch/18";
 		}
 	}
 

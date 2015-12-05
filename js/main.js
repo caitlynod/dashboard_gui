@@ -10,7 +10,7 @@
 		this.firstChild.classList.add("active");
 		count++;
 		if(count === 4){
-			document.location.href = "http://localhost:8888/dashboard_gui/index.php/dashboard/volt";
+			document.location.href = baseURL+"index.php/dashboard/volt";
 		}
 	}
 
