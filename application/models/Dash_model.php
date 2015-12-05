@@ -31,7 +31,6 @@ class Dash_model extends CI_Model {
 		$this->db->order_by('contacts_fname');
 		$sql = $this->db->get_where('tbl_contacts', array('contacts_id'=>$id));
 		return $sql->row_array();
-
 	}
 
 }

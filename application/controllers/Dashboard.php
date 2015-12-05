@@ -19,8 +19,10 @@ class Dashboard extends CI_Controller {
 
 	public function login($id){
 		$data['user'] = $this->Dash_model->getUser($id);
+		$this->session->set_userdata('name', $data['user']['contacts_fname']);
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigation');
 		$this->load->view('navigation/loginUser');
@@ -43,6 +45,7 @@ class Dashboard extends CI_Controller {
 		$data['max'] = $cMax;
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationOpen');
 		$this->load->view('navigation/mainNav');
@@ -53,6 +56,7 @@ class Dashboard extends CI_Controller {
 
 	public function phone(){
 		$data['title'] = 'Phone';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -63,6 +67,7 @@ class Dashboard extends CI_Controller {
 
 	public function contacts($offset = null){
 		$data['title'] = 'Contact Search';
+		$data['name'] = $this->session->userdata('name');
 		$data['total'] = $this->Dash_model->getTotalRows();
 		$this->load->library('pagination');
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contacts/';
@@ -87,6 +92,7 @@ class Dashboard extends CI_Controller {
 
 	public function keypad(){
 		$data['title'] = 'Contact Search';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
@@ -97,6 +103,7 @@ class Dashboard extends CI_Controller {
 
 	public function contactSearch($offset = null){
 		$data['title'] = 'Contact Search';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->library('pagination');
 		$config['base_url'] = 'http://localhost:8888/dashboard_gui/index.php/dashboard/contactSearch/';
 		$config['total_rows'] = $this->Dash_model->getTotalRows();
@@ -120,6 +127,7 @@ class Dashboard extends CI_Controller {
 
 	public function navigation(){
 		$data['title'] = 'Dashboard Navigation';
+		$data['name'] = $this->session->userdata('name');
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigationCenter/map');
 		$this->load->view('Templates/footer');
