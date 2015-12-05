@@ -268,7 +268,7 @@ hr{
 	line-height: 1.12em;
 }
 #searchResults{
-	height: 270px;
+	height: 260px;
 }
 #contactList{
 	height: 300px;
@@ -313,7 +313,7 @@ hr{
 }
 h2.contactName{
 	font-size: 2em;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 p.contactName {
@@ -356,7 +356,7 @@ p.contactName {
 	width: 71%;
 	padding: 0;
 	list-style: none;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 #keyboard li {
