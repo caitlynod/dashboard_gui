@@ -345,7 +345,6 @@ p.contactName {
 #container {
 	margin: 30px auto 0;
 	width: 95%;
-	height: 100px;
 }
 #write {
 	resize: none;
@@ -478,6 +477,72 @@ li#del.del{
 }
 
 /*----------------------MEDIA CENTER--------------------*/
+
+.radioStations{
+	margin-top: 25px;
+}
+
+.radioStations li, .radioIcons li, .dialIcons li{
+	padding-bottom: 0;
+}
+
+.radioStations p{
+	font-size: 3em;
+	font-weight: lighter;
+}
+
+.radioStations li:first-child p{
+	font-weight: bold;
+}
+
+.radioIcons, .dialIcons{
+	margin: 50px auto;
+}
+
+.radioIcons li div{
+	display: block;
+	margin: 0 auto;
+	width: 63px;
+	height: 63px;
+	border: 3px solid rgba(255,255,255,0.2);
+	border-radius: 50px;
+}
+
+.radioIcons li div.active{
+	border: none;
+	padding-top: 3px;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.radioIcons p {
+	color: #fff;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+.radioIcons li div.active p{
+	color: #98d5d1;
+}
+
+.radioIcons i{
+	color: #fff;
+	font-size: 2em;
+	padding-top: 12px;
+}
+
+.dialIcons li div{
+	display: block;
+	margin: 0 auto;
+	width: 45px;
+	height: 45px;
+	border: 2px solid rgba(255,255,255,0.2);
+	border-radius: 50px;
+}
+
+.dialIcons p {
+	color: #fff;
+	padding-top: 8px;
+}
 
 /*----------------------SEARCH--------------------*/
 

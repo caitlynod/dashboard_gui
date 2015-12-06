@@ -1,6 +1,7 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span></div>
 <ul id="mainDash" class="small-block-grid-4 text-center">
 	<li>
+		<a href="<?php echo base_url()."index.php/media/radio";?>">
 		<img src="<?php echo base_url().'images/radio_icon.png';?>">
 		<h3 class="userhead">radio</h3>
 		<p class="white">fm radio</p><br>
@@ -8,6 +9,7 @@
 			<p class="topNumber">97.5</p>
 			<p class="white">Currently Playing: Adele - "Hello"</p>
 		</div>
+		</a>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/input_icon.png';?>">

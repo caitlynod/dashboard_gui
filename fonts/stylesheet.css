@@ -38,7 +38,7 @@
     src: url('Gotham-XLight.eot?#iefix') format('embedded-opentype'),
         url('Gotham-XLight.woff') format('woff'),
         url('Gotham-XLight.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: lighter;
     font-style: normal;
 }
 
@@ -48,7 +48,7 @@
     src: url('Gotham-Light.eot?#iefix') format('embedded-opentype'),
         url('Gotham-Light.woff') format('woff'),
         url('Gotham-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
 
