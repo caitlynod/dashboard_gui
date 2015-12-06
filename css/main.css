@@ -17,7 +17,7 @@ p, a{
 }
 
 .white{
-	color: #fff;
+	color: #fff !important;
 }
 /*----------------------NAVIGATION--------------------*/
 
@@ -556,10 +556,10 @@ margin-right: 30px;
 }
 
 /*----------------------GPS------------------------*/
-      #map {
-        height: 690px;
-        width: 100%;
-      }
+#map {
+	height: 690px;
+	width: 100%;
+}
 #floating-panel {
   position: absolute;
   top: 10px;
@@ -590,24 +590,69 @@ margin-right: 30px;
 #right-panel i {
   font-size: 12px;
 }
-
-      #right-panel {
-      	height: 100px;
-        float: right;
-        width: 279px;
-        overflow: scroll;
-      }
-
-      #floating-panel {
-        background: #fff;
-        padding: 5px;
-        font-size: 14px;
-        font-family: Arial;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        display: none;
-      }
+#right-panel {
+	height: 100px;
+	float: right;
+	width: 279px;
+	overflow: scroll;
+}
+#floating-panel {
+	background: #fff;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Arial;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    display: none;
+}
 
 .side{
 	padding: 0;
+}
+.sidebar{
+	height: 680px !important;
+}
+#directions{
+	margin-top: 30px;
+}
+#directions p{
+	color: #999999;
+	margin-top: 10px;
+}
+.direction1{
+	font-size: 12px;
+}
+.direction2{
+	font-size: 10px;
+}
+
+.destination{
+	height: 70px;
+	margin-left: 50px;padding-top: 30px;
+}
+
+.destination p{
+	font-size: 13px;
+	text-align: left;
+}
+.dest{
+	border-left: 1px #e1e1e2 solid;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+.dest p{
+	margin-left: 30px;
+}
+.fa-reply, .fa-map-marker{
+	color: #fff;
+}
+
+.closeMaps{
+	left: 130px;
+	bottom: 20px;
+	position: absolute;
+}
+.north{
+	margin-top: 5px !important;
 }
