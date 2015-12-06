@@ -9,5 +9,4 @@
     </select>
     </div>
     <div id="map"></div>
-</div>
 </section>

@@ -3,7 +3,7 @@
     <a href="<?php echo base_url()."index.php/phone";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
   <img id="call" src="<?php echo base_url();?>images/call_icon.png">
 <img id="endCall" src="<?php echo base_url();?>images/end_icon.png">
-    <textarea class="search" id="write" maxlength="10"></textarea>
+    <textarea class="search" id="write" maxlength="10" readonly></textarea>
     <hr id="numhr">
 <div class="keyboard large-centered columns keypad">
 <ul id="keyboard" class="key small-block-grid-3 numpad">

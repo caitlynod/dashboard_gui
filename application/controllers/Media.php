@@ -85,7 +85,7 @@ class Media extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
-		$this->load->view('mediaCenter/satellitestation');
+		$this->load->view('mediaCenter/satelliteStation');
 		$this->load->view('Templates/footer');
 		$this->load->view('Templates/dashFooter');
 	}
