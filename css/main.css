@@ -533,7 +533,7 @@ li#del.del{
 }
 
 .centerkeys{
-margin-right: 30px;
+margin-right: 50px;
 }
 
 .searchkeys li.spacekey{
@@ -655,4 +655,38 @@ margin-right: 30px;
 }
 .north{
 	margin-top: 5px !important;
+}
+
+.tripHead{
+	background-color: rgba(255,255,255,0.2);
+	display: block;
+	margin: 0 auto;
+	color: #98d5d1;
+	text-align: center;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.trips{
+	border-top: 1px solid #333333;
+	display: block;
+	margin: 0 auto;
+	color: #98d5d1;
+	text-align: center;
+	height: 30px;
+	margin-top: 10px;
+
+}
+
+.recent{
+	height: 300px;
+	overflow: scroll;
+	margin-left: 45px;
+	margin-top: 25px;
+}
+
+.closeTrips{
+	position: absolute;
+	right: 120px;
+
 }
