@@ -4,7 +4,19 @@
 
 	<h2 id="addressbook" class="text-center userhead">new trip</h2>
 	<p class="text-center totalContact">where would you like to go?</p>
-    <textarea class="search" id="write"></textarea>
+    <hr>
+    <ul class="small-block-grid-2 columns newTrip left">
+        <li class="formLabel"><label class="formLabel right">Name (optional):</label></li>
+        <li><input type="text" ></li>
+        <li class="formLabel"><label class="formLabel right">City:</label></li>
+        <li><input type="text"></li>
+        <li class="formLabel"><label class="formLabel right">Street Name:</label></li>
+        <li><input type="text"></li>
+        <li class="formLabel"><label class="formLabel right">Street Number:</label></li>
+        <li><input type="text"></li>
+        <li class="formLabel"><label class="formLabel right">Postal/Zip Code:</label></li>
+        <li><input type="text"></li>
+    </ul>
 
 <div class="keyboard large-centered columns">
 	<ul id="keyboard" class="key ">

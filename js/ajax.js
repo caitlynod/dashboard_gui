@@ -8,30 +8,30 @@ if(window.location.href.indexOf("contactView") !== -1){
 	var rArrow = document.querySelector(".rightArrow");
 	var lArrow = document.querySelector(".leftArrow");
 
-	if(window.location.href.indexOf("contactSearch/6") !== -1){
+	if(window.location.href.indexOf("contactView/6") !== -1){
 		pageSlider.value = 2;
 	}
 
-	if(window.location.href.indexOf("contactSearch/12") !== -1){
+	if(window.location.href.indexOf("contactView/12") !== -1){
 		pageSlider.value = 3;
 	}
 
-	if(window.location.href.indexOf("contactSearch/18") !== -1){
+	if(window.location.href.indexOf("contactView/18") !== -1){
 		pageSlider.value = 4;
 	}
 
 	function sliderVal(){
 		if(pageSlider.value == 1){
-			document.location.href = baseURL+"index.php/phone/contactSearch";
+			document.location.href = baseURL+"index.php/phone/contactView";
 		}
 		if(pageSlider.value == 2){
-			document.location.href = baseURL+"index.php/phone/contactSearch/6";
+			document.location.href = baseURL+"index.php/phone/contactView/6";
 		}
 		if(pageSlider.value == 3){
-			document.location.href = baseURL+"index.php/phone/contactSearch/12";
+			document.location.href = baseURL+"index.php/phone/contactView/12";
 		}
 		if(pageSlider.value == 4){
-			document.location.href = baseURL+"index.php/phone/contactSearch/18";
+			document.location.href = baseURL+"index.php/phone/contactView/18";
 		}
 	}
 

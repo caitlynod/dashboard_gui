@@ -10,7 +10,7 @@
 		this.firstChild.classList.add("active");
 		count++;
 		if(count === 4){
-			document.location.href = baseURL+"index.php/dashboard/volt";
+			document.location.href = baseURL+"index.php/Dashboard/volt";
 		}
 	}
 
@@ -39,22 +39,22 @@
 
         function sliderVal(){
             if(pageSlider.value == 1){
-                document.location.href = baseURL+"index.php/dashboard/contacts";
+                document.location.href = baseURL+"index.php/Phone/contacts";
             }
             if(pageSlider.value == 2){
-                document.location.href = baseURL+"index.php/dashboard/contacts/4";
+                document.location.href = baseURL+"index.php/Phone/contacts/4";
             }
             if(pageSlider.value == 3){
-                document.location.href = baseURL+"index.php/dashboard/contacts/8";
+                document.location.href = baseURL+"index.php/Phone/contacts/8";
             }
             if(pageSlider.value == 4){
-                document.location.href = baseURL+"index.php/dashboard/contacts/12";
+                document.location.href = baseURL+"index.php/Phone/contacts/12";
             }
             if(pageSlider.value == 5){
-                document.location.href = baseURL+"index.php/dashboard/contacts/16";
+                document.location.href = baseURL+"index.php/Phone/contacts/16";
             }
             if(pageSlider.value == 6){
-                document.location.href = baseURL+"index.php/dashboard/contacts/20";
+                document.location.href = baseURL+"index.php/Phone/contacts/20";
             }
         }
 

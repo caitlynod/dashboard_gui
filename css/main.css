@@ -690,3 +690,31 @@ margin-right: 50px;
 	right: 120px;
 
 }
+
+.food{
+	width: 69px;
+}
+
+li.formLabel{
+	color: #98d5d1;
+	width: 15%;
+}
+.formLabel{
+	color: #98d5d1;
+	padding-top: 5px;
+}
+.newTrip{
+	height: 300px;
+	overflow: scroll;
+	margin-left: 145px;
+	padding-top: 30px;
+}
+.newTrip li{
+	height: 50px;
+}
+input[type="text"]{
+	clear: both;
+	background: rgba(255,255,255,0.2);
+	border: none;
+}
+

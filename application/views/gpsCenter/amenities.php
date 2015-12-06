@@ -9,7 +9,7 @@
 	<hr>
 	<div class="users">
 		<ul class="small-block-grid-6 columns mainNav">
-			<li><img class="navPic" src="<?php echo base_url().'images/amenities_icon.png';?>"><h2 class="navOption">food</h2></a></li>
+			<li><img class="navPic food" src="<?php echo base_url().'images/amenities_icon.png';?>"><h2 class="navOption">food</h2></a></li>
             <li><img class="navPic" src="<?php echo base_url().'images/coffee_icon.png';?>"><h2 class="navOption">coffee</h2></a></li>
             <li><img class="navPic" src="<?php echo base_url().'images/gas_icon.png';?>"><h2 class="navOption">gas</h2></a></li>
             <li><img class="navPic" src="<?php echo base_url().'images/shop_icon.png';?>"><h2 class="navOption">shopping</h2></a></li>
