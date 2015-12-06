@@ -478,6 +478,9 @@ li#del.del{
 }
 
 /*----------------------MEDIA CENTER--------------------*/
+.input{
+	margin-top: 5px !important;
+}
 
 .radioStations{
 	margin-top: 25px;
@@ -555,6 +558,7 @@ li#del.del{
 	padding: 0;
 	letter-spacing: 2px;
 }
+<<<<<<< HEAD
 
 .playButtons {
 	margin: 75px auto;
@@ -568,6 +572,47 @@ li#del.del{
 	cursor: pointer;
 }
 
+=======
+.playOptions{
+	width: 70px;
+}
+.playBtn{
+	width: 90px !important;
+}
+.mediaBtns{
+	margin: 20px 0;
+	padding-left: 70px;
+}
+.songOptions{
+	margin: 35px 0;
+	padding-left: 100px;
+}
+.marginLeft{
+	margin-left: 20px;
+}
+.marginLeft1{
+	margin-left: 6px;
+}
+.spotifySong{
+	margin-top: 15px;
+}
+#playlists{
+	height: 300px;
+	overflow: scroll;
+	width: 80%;
+	margin-left: 100px !important;
+	margin-top: 20px;
+}
+#playlists li{
+	border: none;
+	height: 65%;
+}
+.play{
+	position: absolute;
+	left: 125px;
+	width: 69px;
+}
+>>>>>>> origin/master
 /*----------------------SEARCH--------------------*/
 
 .marginTop{
@@ -895,3 +940,4 @@ img.twitteric{
 	margin-left: 20px;
 	margin-top: 30px;
 }
+
