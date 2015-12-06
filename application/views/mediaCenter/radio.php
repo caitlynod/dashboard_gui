@@ -26,7 +26,7 @@
 <hr>
 <div class="small-10 small-centered columns text-center">
 <ul class="small-block-grid-12 columns dialIcons">
-    <p>Quick Enter:</p>
+    <p id="quickEnter">Quick Enter:</p>
     <li><div><p>1</p></div></li>
     <li><div><p>2</p></div></li>
     <li><div><p>3</p></div></li>
@@ -37,7 +37,7 @@
     <li><div><p>8</p></div></li>
     <li><div><p>9</p></div></li>
     <li><div><p>0</p></div></li>
-    <li><div><p>.</p></div></li>
+    <li><div><p id="dialDot">.</p></div></li>
     <li><img src="<?php echo base_url()."images/check_icon.png";?>"></li>
 </ul>
 </div>

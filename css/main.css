@@ -544,6 +544,17 @@ li#del.del{
 	padding-top: 8px;
 }
 
+#dialDot{
+	padding-top: 5px;
+}
+
+#quickEnter{
+	color: #98d5d1;
+	margin: 20px 0;
+	padding: 0;
+	letter-spacing: 2px;
+}
+
 /*----------------------SEARCH--------------------*/
 
 .marginTop{
