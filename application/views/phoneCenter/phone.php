@@ -18,7 +18,7 @@
 		<h3 class="userhead">address book</h3>
 	</a>
 	</li>
-	<li><a href="<?php echo base_url()."index.php/phone/contactSearch";?>">
+	<li><a href="<?php echo base_url()."index.php/phone/contactView";?>">
 		<img src="<?php echo base_url().'images/searchL_icon.png';?>">
 		<h3 class="userhead">search</h3>
 </a>

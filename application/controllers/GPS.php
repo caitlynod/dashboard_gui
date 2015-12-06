@@ -13,6 +13,7 @@ class GPS extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
+		$this->load->view('gpsCenter/maphead');
 		$this->load->view('gpsCenter/map');
 		$this->load->view('Templates/footer');
 		$this->load->view('Templates/mapFooter');
