@@ -5,8 +5,10 @@
 	<ul id="mainDash" class="text-center sidebar">
 		<li class="">
 		<img src="<?php echo base_url().'images/north_icon.png';?>">
-		<h3 class="userhead">voice search</h3>
-		 <div id="right-panel"></div>
+		<h3 class="userhead"><span class"white"><i class="fa fa-reply"></i></span>200m</h3>
+		<p class="white">Left on Wellington St</p><br>
+		<a href="<?php echo base_url()."index.php/phone";?>"><img class="closeMaps" src="<?php echo base_url()."images/close_icon.png";?>"></a>
+
 	</li>
 
 </ul>
