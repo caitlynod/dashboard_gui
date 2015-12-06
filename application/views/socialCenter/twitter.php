@@ -4,18 +4,38 @@
 	<div class="small-4 columns side">
 	<ul id="mainDash" class="text-center sidebar">
 		<li class="">
-		<img class="north" src="<?php echo base_url().'images/thumb/'.$image;?>">
+		<img class="twitteric" src="<?php echo base_url().'images/twitter_icon.png';?>">
 		<h3 class="userhead">twitter</h3>
 		<p class="white">@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p>
-	<hr>
-	<img src="<?php echo base_url().'images/twitter_icon.png';?>">
-	designer | yogi | cats
-	<hr>
+	<hr id="profTwitter">
+	<img class="userProfImg" src="<?php echo base_url().'images/thumb/'.$image;?>">
+	<p class="white">developer | coffee | begos</p>
+	<hr id="bottomTwitter">
 
-	</div>
-		<a href="<?php echo base_url()."index.php/GPS/";?>"><img class="closeMaps" src="<?php echo base_url()."images/close_icon.png";?>"></a>
+
+		<a href="<?php echo base_url()."index.php/GPS/";?>"><img class="closeTwitter" src="<?php echo base_url()."images/close_icon.png";?>"></a>
 
 	</li>
 
 </ul>
-	</div>
+</div>
+	<div class="small-8 columns">
+	<h2 class="text-center userhead">twitter feed</h2>
+	<p class="white text-center">@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p>
+<hr id="bottomTwitter">
+<div>
+	<ul class="small-block-grid-3 columns twitterfeed">
+		<li><i class="fa fa-retweet"></i>AIGA</li>
+		<li>Unpacking the 116 images @NASA...</li>
+		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li>HostGator</li>
+		<li>Hey there, we would love to be your...</li>
+		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li>House of Friendship</li>
+		<li>Hey there, we would love to be your...</li>
+		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li>Chriskindl Canada</li>
+		<li>Hey there, we would love to be your...</li>
+		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+	</ul>
+</div></div></section>

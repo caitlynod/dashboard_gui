@@ -746,3 +746,46 @@ input[type="text"]{
 	border: none;
 }
 
+/*-----------------------------TWITTER-------------------------*/
+img.twitteric{
+	margin-top: 5px !important;
+}
+
+#profTwitter{
+	margin-top: 80px;
+}
+.userProfImg{
+	margin: 0 auto !important;
+	margin-top: 50px !important;
+	margin-bottom: 10px !important;
+	width: 100px;
+	 -moz-border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+}
+
+.closeTwitter{
+	left: 130px;
+    bottom: 30px;
+    position: absolute;
+}
+
+#bottomTwitter{
+	margin-top: 50px;
+}
+
+.fa{
+	color: #98d5d1;
+	text-align: center;
+}
+
+.twitterfeed{
+	height: 300px;
+	overflow: scroll;
+}
+.twitterfeed li{
+	border-bottom: #333333 1px solid;
+	padding-top: 20px;
+	color: #e1e1e1;
+	font-size: 11px;
+	height: 50px;
+}
