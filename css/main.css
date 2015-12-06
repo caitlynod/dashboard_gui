@@ -2,6 +2,7 @@
 /*----------------------GLOBAL--------------------*/
 body{
 	background: url('../images/background.png') no-repeat;
+	background-color: #333333;
 }
 #mapCanvas{
 	height: 250px;
