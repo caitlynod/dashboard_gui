@@ -22,7 +22,8 @@ class Dashboard extends CI_Controller {
 		$data['user'] = $this->Dash_model->getUser($id);
 		$userArray = array(
 			'name' => $data['user']['contacts_fname'], 
-			'lname' => $data['user']['contacts_lname']
+			'lname' => $data['user']['contacts_lname'],
+			'image' => $data['user']['contacts_img']
 			);
 		$this->session->set_userdata($userArray);
 		date_default_timezone_set('America/Toronto');

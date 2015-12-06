@@ -20,4 +20,18 @@ class Social_media extends CI_Controller {
 		$this->load->view('Templates/dashFooter');
 
 	}
+
+	public function twitter(){
+		$data['title'] = 'Social Media';
+		$data['name'] = $this->session->userdata('name');
+		$data['lname'] = $this->session->userdata('lname');
+		$data['image'] = $this->session->userdata('image');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('socialCenter/twitter');
+		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
+
+	}
 }

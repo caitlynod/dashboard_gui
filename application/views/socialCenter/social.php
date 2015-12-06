@@ -1,9 +1,10 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span> | <?php echo $title;?></div>
 <ul id="mainDash" class="small-block-grid-4 text-center">
-	<li>
+	<li><a href="<?php echo base_url().'index.php/Social_media/twitter';?>">
 		<img src="<?php echo base_url().'images/twitter_icon.png';?>">
 		<h3 class="userhead">twitter</h3>
 			<p class="white">@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p>
+		</a>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/facebook_icon.png';?>">
