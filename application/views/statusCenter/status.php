@@ -1,11 +1,11 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span> | <?php echo $title;?></div>
 <div class="marginTop"></div>
 <a href="<?php echo base_url()."index.php/dashboard/volt";?>"><img class="close" src="<?php echo base_url()."images/close_icon.png";?>"></a>
-<h2 id="addressbook" class="text-center userhead">volt status</h2>
+<h2 class="text-center userhead">volt status</h2>
 <div class="statusImages">
     <div class="row">
     <div class="small-8 columns">
-        <img src="<?php echo base_url().'images/carstatus_icon.png';?>">
+        <img id="carImg" src="<?php echo base_url().'images/carstatus_icon.png';?>">
     </div>
     <div class="small-4 columns">
         <img src="<?php echo base_url().'images/cargraph_icon.png';?>">
@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="small-8 small-centered columns">
-<ul class="small-block-grid-4 text-center">
+<ul class="small-block-grid-4 text-center statusNav">
     <li>
         <img src="<?php echo base_url().'images/power_icon.png';?>">
         <p>powerflow</p>

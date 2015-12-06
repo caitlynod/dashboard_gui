@@ -694,11 +694,31 @@ margin-right: 50px;
 /*----------------------STATUS------------------------*/
 
 .statusImages{
-	margin: 50px 0;
+	margin: 50px;
 	padding: 25px 0;
 	border-top: 1px solid #98d5d1;
 	border-bottom: 1px solid #98d5d1;
 }
+
+.statusImages img {
+	display: block;
+	margin: 0 auto;
+}
+
+#carImg{
+	margin-top: 20px;
+}
+
+.statusNav img {
+	display: block;
+	margin: 10px auto;
+}
+
+.statusNav p{
+	font-family: 'akashiregular';
+	color: #98d5d1;
+}
+
 .food{
 	width: 69px;
 }
