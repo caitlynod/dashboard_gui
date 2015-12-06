@@ -43,4 +43,39 @@ class Media extends CI_Controller {
 		$this->load->view('Templates/dashFooter');
 	}
 
+	public function spotify(){
+		$data['title'] = 'Media Center';
+		$data['name'] = $this->session->userdata('name');
+		$data['lname'] = $this->session->userdata('lname');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('mediaCenter/spotify');
+		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
+	}
+	public function satellite(){
+		$data['title'] = 'Media Center';
+		$data['name'] = $this->session->userdata('name');
+		$data['lname'] = $this->session->userdata('lname');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('mediaCenter/satellitestation');
+		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
+	}
+
+	public function satellitestation(){
+		$data['title'] = 'Media Center';
+		$data['name'] = $this->session->userdata('name');
+		$data['lname'] = $this->session->userdata('lname');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('mediaCenter/satellitestation');
+		$this->load->view('Templates/footer');
+		$this->load->view('Templates/dashFooter');
+	}
+
 }

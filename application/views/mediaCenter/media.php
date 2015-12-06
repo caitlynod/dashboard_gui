@@ -16,11 +16,13 @@
 		<h3 class="userhead">input</h3>
 		<p class="white">disc inserted:<br>Adele: 25</p>
 		<div class="dashInfo">
-			<p id="dashClock" class="topNumber"></p>
-			<p class="white"><?php echo date('l');?><br><?php echo date('F jS Y');?></p>
+			<img class="input" src="<?php echo base_url();?>images/cd_icon.png">
+			<p>CD Player</p>
+			<img class="input" src="<?php echo base_url();?>images/aux_icon.png">
+			<p>AUX</p>
 		</div>
 	</li>
-	<li>
+	<li><a href="<?php echo base_url();?>index.php/Media/satellite">
 		<img src="<?php echo base_url().'images/satellite_icon.png';?>">
 		<h3 class="userhead">satellite</h3>
 		<p class="white">Sirius Radio:<br>@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p>
@@ -28,8 +30,9 @@
 			<p class="topNumber">off</p>
 			<p class="white">Last Station:<br> Pop2K</p>
 		</div>
+	</a>
 	</li>
-	<li>
+	<li><a href="<?php echo base_url();?>index.php/Media/spotify">
 		<img src="<?php echo base_url().'images/spotify_icon.png';?>">
 		<h3 class="userhead">spotify</h3>
 		<p class="white">@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p><br>
@@ -37,5 +40,6 @@
 			<p class="topNumber">off</p>
 			<p class="white">Last Played: <?php echo $name;?>'s Playlist</p>
 		</div>
+	</a>
 	</li>
 </ul>
