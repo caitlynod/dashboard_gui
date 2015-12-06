@@ -614,6 +614,13 @@ li#del.del{
 	left: 125px;
 	width: 69px;
 }
+.rkeyboard{
+	margin-top: 35px;
+	margin-left: 20px;
+}
+.stationSlider{
+	margin: 40px auto !important;
+}
 /*----------------------SEARCH--------------------*/
 
 .marginTop{
