@@ -8,6 +8,9 @@ class Dashboard extends CI_Controller {
 	}
 	
 	public function index(){
+		$data['name'] = $this->session->userdata('name');
+		$data['lname'] = $this->session->userdata('lname');
+		$data['image'] = $this->session->userdata('image');
 		date_default_timezone_set('America/Toronto');
 		$data['title'] = 'Dashboard';
 		$this->load->view('Templates/header', $data);

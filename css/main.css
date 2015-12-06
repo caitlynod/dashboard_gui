@@ -115,6 +115,11 @@ p, a{
 	bottom: 5px;
 	left: 5px;
 }
+.profPic{
+	width: 118px;
+	 -moz-border-radius: 59px !important;
+    -webkit-border-radius: 59px !important;
+}
 .profPic, .navPic{
 	display: block;
 	margin: 0 auto;
@@ -776,11 +781,15 @@ img.twitteric{
 .fa{
 	color: #98d5d1;
 	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .twitterfeed{
 	height: 300px;
 	overflow: scroll;
+	margin-top: 50px;
+	margin-left: 15px;
 }
 .twitterfeed li{
 	border-bottom: #333333 1px solid;
@@ -788,4 +797,15 @@ img.twitteric{
 	color: #e1e1e1;
 	font-size: 11px;
 	height: 50px;
+}
+
+.response{
+	padding-left: 80px !important;
+}
+.twitterIcons{
+	width: 69px;
+}
+.twitterFunc{
+	margin-left: 20px;
+	margin-top: 30px;
 }

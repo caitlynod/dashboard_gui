@@ -86,7 +86,7 @@ if(window.location.href.indexOf("contactView") !== -1){
 			var contact = JSON.parse(results.responseText);
 			searchResults.innerHTML = "";
 			for(var i=0;i<contact.length;i++){
-				searchResults.innerHTML += '<li class="contact"><img class="navPic"  src="'+baseURL+'images/'+contact[i].contacts_img+'" ><h2 class="contactName">'+contact[i].contacts_fname+'</h2><p class="contactName">'+contact[i].contacts_lname+'</li>';
+				searchResults.innerHTML += '<li class="contact"><img class="navPic profPic"  src="'+baseURL+'images/'+contact[i].contacts_img+'" ><h2 class="contactName">'+contact[i].contacts_fname+'</h2><p class="contactName">'+contact[i].contacts_lname+'</li>';
 			}
 			if(contact.length === 0){
 				//console.log("No Results");

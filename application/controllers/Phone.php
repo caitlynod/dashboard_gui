@@ -60,7 +60,7 @@ class Phone extends CI_Controller {
 		$data['title'] = 'Phone';
 		$data['name'] = $this->session->userdata('name');
 		$this->load->library('pagination');
-		$config['base_url'] = base_url().'index.php/phone/contactSearch/';
+		$config['base_url'] = base_url().'index.php/phone/contactView/';
 		$config['total_rows'] = $this->Dash_model->getTotalRows();
 		$config['per_page'] = 6;
 		$config['num_links']  = 0;

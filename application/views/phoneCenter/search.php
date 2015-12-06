@@ -7,7 +7,7 @@
     <input id="resultSlider" type="range" min="1" value="1" max="4">
     <ul id="searchResults" class="small-block-grid-6 columns contacts">
         <?php foreach($contacts as $contact):?>
-    		<li class="contact"><img class="navPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
+    		<li class="contact"><img class="navPic profPic" src="<?php echo base_url().'images/'.$contact['contacts_img'];?>"><h2 class="contactName"><?php echo $contact['contacts_fname'];?></h2><p class="contactName"><?php echo $contact['contacts_lname'];?></p></li>
         <?php endforeach;?>
     </ul>
 <div class="keyboard large-centered columns">

@@ -13,7 +13,7 @@
 	<hr id="bottomTwitter">
 
 
-		<a href="<?php echo base_url()."index.php/GPS/";?>"><img class="closeTwitter" src="<?php echo base_url()."images/close_icon.png";?>"></a>
+		<a href="<?php echo base_url()."index.php/Social_media/";?>"><img class="closeTwitter" src="<?php echo base_url()."images/close_icon.png";?>"></a>
 
 	</li>
 
@@ -27,15 +27,35 @@
 	<ul class="small-block-grid-3 columns twitterfeed">
 		<li><i class="fa fa-retweet"></i>AIGA</li>
 		<li>Unpacking the 116 images @NASA...</li>
-		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
 		<li>HostGator</li>
 		<li>Hey there, we would love to be your...</li>
-		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
 		<li>House of Friendship</li>
 		<li>Hey there, we would love to be your...</li>
-		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
 		<li>Chriskindl Canada</li>
 		<li>Hey there, we would love to be your...</li>
-		<li><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li>Forest City Gallery</li>
+		<li>Hey there, we would love to be your...</li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li><i class="fa fa-retweet"></i>Arcane</li>
+		<li>Hey there, we would love to be your...</li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
+		<li><i class="fa fa-retweet"></i>Scotch Bran Canada</li>
+		<li>Hey there, we would love to be your...</li>
+		<li class="response"><i class="fa fa-retweet"></i><i class="fa fa-share"></i><i class="fa fa-heart"></i></li>
 	</ul>
-</div></div></section>
+</div>
+<div>
+	<ul class="small-block-grid-4 columns twitterFunc">
+		<li><img class="twitterIcons" src="<?php echo base_url();?>images/compose_icon.png"></li>
+		<li><img class="twitterIcons" src="<?php echo base_url();?>images/user_icon.png"></li>
+		<li><img class="twitterIcons" class="twitterIcons" src="<?php echo base_url();?>images/user_icon.png"></li>
+		<li><img class="twitterIcons" src="<?php echo base_url();?>images/search_icon.png"></li>
+		
+	</ul>
+</div>
+</div>
+</section>
