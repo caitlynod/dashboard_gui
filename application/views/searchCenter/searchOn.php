@@ -1,11 +1,8 @@
-	<div class="small-8 columns">
-
-			<h2 class="text-center userhead">search</h2>
-			<textarea class="searchField" id="write"></textarea>
- <hr>
- <ul class="small-block-grid-4 columns searchlisting" id="placeSearch">
- 	
- </ul>
+<div class="small-8 columns">
+	<h2 class="text-center userhead marginTop">search</h2>
+	<textarea class="searchField" id="write"></textarea>
+<hr>
+<ul class="small-block-grid-4 columns searchlisting" id="placeSearch"></ul>
 <div class="keyboard large-centered columns">
 	<ul id="keyboard" class="key searchkeys">
         <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
@@ -68,7 +65,4 @@
     </ul>
 </div>    
 </div>
-	</div>
 </section>
-
-	

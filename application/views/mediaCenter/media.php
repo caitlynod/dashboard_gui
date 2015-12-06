@@ -1,7 +1,7 @@
 <div id="topClock" class="text-center"><span id="topClockTime"></span></div>
 <ul id="mainDash" class="small-block-grid-4 text-center">
 	<li>
-		<img src="<?php echo base_url().'images/weather_icon.png';?>">
+		<img src="<?php echo base_url().'images/radio_icon.png';?>">
 		<h3 class="userhead">radio</h3>
 		<p class="white">fm radio</p><br>
 		<div class="dashInfo">
@@ -10,7 +10,7 @@
 		</div>
 	</li>
 	<li>
-		<img src="<?php echo base_url().'images/clock_icon.png';?>">
+		<img src="<?php echo base_url().'images/input_icon.png';?>">
 		<h3 class="userhead">input</h3>
 		<p class="white">disc inserted:<br>Adele: 25</p>
 		<div class="dashInfo">
@@ -19,7 +19,7 @@
 		</div>
 	</li>
 	<li>
-		<img src="<?php echo base_url().'images/trip_icon.png';?>">
+		<img src="<?php echo base_url().'images/satellite_icon.png';?>">
 		<h3 class="userhead">satellite</h3>
 		<p class="white">Sirius Radio:<br>@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p>
 		<div class="dashInfo">
@@ -28,7 +28,7 @@
 		</div>
 	</li>
 	<li>
-		<img src="<?php echo base_url().'images/radio_icon.png';?>">
+		<img src="<?php echo base_url().'images/spotify_icon.png';?>">
 		<h3 class="userhead">spotify</h3>
 		<p class="white">@<?php echo strtolower($name[0].str_replace("'", "", $lname));?></p><br>
 		<div class="dashInfo">

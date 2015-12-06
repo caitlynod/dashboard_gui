@@ -13,9 +13,23 @@ class Search extends CI_Controller {
 		$this->load->view('Templates/header', $data);
 		$this->load->view('navigation/navigationClosed');
 		$this->load->view('navigation/mainNav');
-		$this->load->view('searchCenter/searchVoice');
-		$this->load->view('searchCenter/sidebar');
-		$this->load->view('searchCenter/search');
+		$this->load->view('searchCenter/searchHeader');
+		$this->load->view('searchCenter/voiceOn');
+		$this->load->view('searchCenter/searchOff');
+		$this->load->view('Templates/footer');
+		$this->load->view('Templates/searchFooter');
+
+	}
+
+	public function manual(){
+		$data['title'] = 'Search';
+		$data['name'] = $this->session->userdata('name');
+		$this->load->view('Templates/header', $data);
+		$this->load->view('navigation/navigationClosed');
+		$this->load->view('navigation/mainNav');
+		$this->load->view('searchCenter/searchHeader');
+		$this->load->view('searchCenter/voiceOff');
+		$this->load->view('searchCenter/searchOn');
 		$this->load->view('Templates/footer');
 		$this->load->view('Templates/searchFooter');
 

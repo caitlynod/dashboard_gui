@@ -338,9 +338,8 @@ p.contactName {
 
 /*----------------------KEYBOARD / NUMPAD--------------------*/
 #container {
-	margin: 0 auto;
+	margin: 30px auto 0;
 	width: 95%;
-	margin-top: 30px;
 	height: 100px;
 }
 #write {
@@ -477,10 +476,33 @@ li#del.del{
 
 /*----------------------SEARCH--------------------*/
 
+.marginTop{
+	margin-top: 30px;
+}
+
 .voiceOn {
 	background: -moz-linear-gradient(top, #98d5d1 0%, #252c2a 100%) !important;
 	background: -webkit-linear-gradient(top, #98d5d1 0%,#252c2a 100%) !important;
 	background: linear-gradient(to bottom, #98d5d1 0%,#252c2a 100%) !important;
+}
+
+.micOff{
+	font-size: 3em;
+}
+
+.voiceOff p{
+	color: #707070;
+}
+
+#searchOff{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #707070;
+	opacity: 0.1;
+	z-index: 10;
 }
 
 .searchkeys{
@@ -521,14 +543,13 @@ margin-right: 30px;
 }
 
 .sidebar{
-	height:690px !important;
+	margin-left: 18px !important;
 	margin-bottom: 0 !important;
 }
 #placeSearch{
 	height: 220px;
 	overflow: scroll;
-	margin-left: 50px;
-	padding-top: 20px;
+	margin: 10px 0 10px 50px;
 }
 .searchtitle, .searchloc, .searchdist{
 	margin-right: 50px;
