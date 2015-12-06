@@ -558,7 +558,6 @@ li#del.del{
 	padding: 0;
 	letter-spacing: 2px;
 }
-<<<<<<< HEAD
 
 .playButtons {
 	margin: 75px auto;
@@ -572,7 +571,6 @@ li#del.del{
 	cursor: pointer;
 }
 
-=======
 .playOptions{
 	width: 70px;
 }
@@ -612,7 +610,6 @@ li#del.del{
 	left: 125px;
 	width: 69px;
 }
->>>>>>> origin/master
 /*----------------------SEARCH--------------------*/
 
 .marginTop{
@@ -764,7 +761,8 @@ margin-right: 50px;
 
 .destination{
 	height: 70px;
-	margin-left: 50px;padding-top: 30px;
+	margin-left: 50px;
+	padding-top: 30px;
 }
 
 .destination p{
@@ -940,4 +938,3 @@ img.twitteric{
 	margin-left: 20px;
 	margin-top: 30px;
 }
-
