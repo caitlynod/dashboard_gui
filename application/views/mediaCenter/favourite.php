@@ -15,12 +15,10 @@
     <li><p>98.5</p></li>
 </ul>
 </div>
-<div class="small-5 small-centered columns">
-<ul class="small-block-grid-4 columns text-center radioIcons">
-    <li><div><p>AM</p></div></li>
-    <li><div class="active"><p>FM</p></div></li>
-    <li><a href="<?php echo base_url()."index.php/media/favourite";?>"><div><i class="fa fa-star"></i></div></a></li>
-    <li><img src="<?php echo base_url()."images/addfav_icon.png";?>"></li>
+<div class="small-3 small-centered columns">
+<ul class="small-block-grid-2 columns text-center radioIcons">
+    <li><a href="<?php echo base_url()."index.php/media/radio";?>"><div><i class="fa fa-arrow-left"></i></div></a></li>
+    <li><img src="<?php echo base_url()."images/delfav_icon.png";?>"></li>
 </ul>
 </div>
 <hr>
