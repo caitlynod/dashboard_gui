@@ -12,6 +12,7 @@
 		</a>
 	</li>
 	<li>
+		<a href="<?php echo base_url()."index.php/media/input";?>">
 		<img src="<?php echo base_url().'images/input_icon.png';?>">
 		<h3 class="userhead">input</h3>
 		<p class="white">disc inserted:<br>Adele: 25</p>
@@ -19,6 +20,7 @@
 			<p id="dashClock" class="topNumber"></p>
 			<p class="white"><?php echo date('l');?><br><?php echo date('F jS Y');?></p>
 		</div>
+		</a>
 	</li>
 	<li>
 		<img src="<?php echo base_url().'images/satellite_icon.png';?>">

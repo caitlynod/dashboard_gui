@@ -14,6 +14,38 @@
 		}
 	}
 
+    if(window.location.href.indexOf("media/input") !== -1){
+        var rewindB = document.querySelector("#rButton");
+        var playB = document.querySelector("#pButton");
+        var fastB = document.querySelector("#fButton");
+        var base = baseURL + "images/";
+        var src;
+
+        function changeState(){
+            if(this.src.indexOf("alt") !== -1){
+                src = this.alt + "_icon.png";
+            }else{
+                src = this.alt + "_icon_alt.png";
+            }
+
+            this.src = base + src;
+        }
+
+        function playPause(){
+            if(this.src.indexOf("play") !== -1){
+                src = "pause_icon.png";
+            }else{
+                src = "play_icon.png";
+            }
+
+            this.src = base + src;
+        }
+
+        rewindB.addEventListener("click",changeState,false);
+        playB.addEventListener("click",playPause,false);
+        fastB.addEventListener("click",changeState,false);
+    }
+
     if(window.location.href.indexOf("contacts") !== -1){
         var pageSlider = document.querySelector("#resultSlider");
 

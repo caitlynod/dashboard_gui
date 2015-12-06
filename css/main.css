@@ -556,6 +556,18 @@ li#del.del{
 	letter-spacing: 2px;
 }
 
+.playButtons {
+	margin: 75px auto;
+}
+
+.sideButs{
+	margin-top: 17.5px;
+}
+
+#rButton, #pButton, #fButton{
+	cursor: pointer;
+}
+
 /*----------------------SEARCH--------------------*/
 
 .marginTop{
